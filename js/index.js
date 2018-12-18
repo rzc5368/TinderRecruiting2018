@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
   var animating = false;
   var cardsCounter = 0;
   var numOfCards = 28;
@@ -7,6 +8,38 @@ $(document).ready(function() {
   var pullDeltaX = 0;
   var deg = 0;
   var $card, $cardReject, $cardLike;
+
+  // Additional Variables
+
+  var countIST = 0;     // Information Sciences & Tech ( Design & Dev, Integration & App, People & Org.)
+  var countSRA= 0;      // Security Risk Analysis
+  var countDS = 0;      // Data Science
+  var countCyber = 0;   // Cyber Security
+
+  var istTopics = new Array("Website Development",
+                               "Application Development",
+                               "Cloud computing",
+                               "Troubleshooting",
+                               "Human Centered Design");
+
+  var sraTopics = new Array("Puzzle Cracking",
+                            "Cryptology / Encryption",
+                             "Mitigation Strategies",
+                             "Vulnerability Analysis",
+                             "Risk assessment");
+
+  var dsTopics = new Array("Data Analysis",
+                           "Applied Mathematics",
+                           "Artificial Intelligence (AI)",
+                           "Big Data",
+                           "Data visualization");
+
+  var cyberTopics = new Array("Digital Crime Solving",
+                              "Cyber Threat Analysis",
+                              "Data privacy",
+                              "IT infrastructure",
+                              "Ethical Hacking");
+
 
   function pullChange() {
     animating = true;
@@ -20,13 +53,26 @@ $(document).ready(function() {
     $cardLike.css("opacity", likeOpacity);
   };
 
+
   function release() {
 
     if (pullDeltaX >= decisionVal) {
       $card.addClass("to-right");
+      countIST++;
     } else if (pullDeltaX <= -decisionVal) {
       $card.addClass("to-left");
     }
+
+    ///// Start of Progress code
+
+    var example = document.getElementById("card_2").textContent;
+
+
+    if(example == istTopics[1]){
+        document.write("success");
+    }
+
+    ///// end of in progress code
 
     if (Math.abs(pullDeltaX) >= decisionVal) {
       $card.addClass("inactive");
@@ -76,4 +122,6 @@ $(document).ready(function() {
     });
   });
 
+
 });
+
