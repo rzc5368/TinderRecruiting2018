@@ -16,29 +16,33 @@ $(document).ready(function() {
   var countDS = 0;      // Data Science
   var countCyber = 0;   // Cyber Security
 
-  var istTopics = new Array("Website Development",
+  var rightSwipeTopics =[]; // Array that will contain the topics liked by user
+
+  var istTopics = ["Website Development",
                                "Application Development",
                                "Cloud computing",
                                "Troubleshooting",
-                               "Human Centered Design");
+                               "Human Centered Design"];
 
-  var sraTopics = new Array("Puzzle Cracking",
+  var sraTopics = ["Puzzle Cracking",
                             "Cryptology / Encryption",
                              "Mitigation Strategies",
                              "Vulnerability Analysis",
-                             "Risk assessment");
+                             "Risk assessment"];
 
-  var dsTopics = new Array("Data Analysis",
+  var dsTopics = ["Data Analysis",
                            "Applied Mathematics",
                            "Artificial Intelligence (AI)",
                            "Big Data",
-                           "Data visualization");
+                           "Data visualization"];
 
-  var cyberTopics = new Array("Digital Crime Solving",
+  var cyberTopics = ["Digital Crime Solving",
                               "Cyber Threat Analysis",
                               "Data privacy",
                               "IT infrastructure",
-                              "Ethical Hacking");
+                              "Ethical Hacking"];
+
+
 
 
   function pullChange() {
@@ -56,36 +60,78 @@ $(document).ready(function() {
 
   function release() {
 
+    var example = document.getElementsByClassName("demo__card__we"); // Array of all topics. Index starts with topics from Z-A, A being the last index.
+    numOfCards--;
+
     if (pullDeltaX >= decisionVal) {
       $card.addClass("to-right");
-      countIST++;
+
+      rightSwipeTopics.push(example[numOfCards].textContent);  //adds right swipe topics to array
+
     } else if (pullDeltaX <= -decisionVal) {
       $card.addClass("to-left");
     }
 
+
     ///// Start of Progress code
 
-    var example = document.getElementById("card_2").textContent;
+   // Need to collect only cards swiped
 
 
-    if(example == istTopics[1]){
-        document.write("success");
+    var condition = false;
+
+    if(condition == false){
+    istTopics.forEach(function(element){
+        if(example == element){
+            //condition = true;
+        }
+    });
+
     }
+
+    if(condition == false){
+    sraTopics.forEach(function(element){
+        if(example == element){
+            document.write("yay");
+        }
+    });
+
+    }
+    if(condition == false){
+    dsTopics.forEach(function(element){
+        if(example == element){
+            document.write("yay");
+        }
+    });
+}
+    if(condition == false){
+    cyberTopics.forEach(function(element){
+        if(example == element){
+            document.write("yay");
+        }
+    });
+
+    }
+
+    condition = false;
+
+
+
 
     ///// end of in progress code
 
-    if (Math.abs(pullDeltaX) >= decisionVal) {
-      $card.addClass("inactive");
-
-      setTimeout(function() {
-        $card.addClass("below").removeClass("inactive to-left to-right");
-        cardsCounter++;
-        if (cardsCounter === numOfCards) {
-          cardsCounter = 0;
-          $(".demo__card").removeClass("below");
-        }
-      }, 300);
-    }
+//    if (Math.abs(pullDeltaX) >= decisionVal) {
+//      $card.addClass("inactive");
+//
+//      setTimeout(function() {
+//        $card.addClass("below").removeClass("inactive to-left to-right");
+//        cardsCounter++;
+//        if (cardsCounter === numOfCards) {
+//          cardsCounter = 0;
+//          $(".demo__card").removeClass("below");
+//        }
+//      }, 300);
+//    }
 
     if (Math.abs(pullDeltaX) < decisionVal) {
       $card.addClass("reset");
