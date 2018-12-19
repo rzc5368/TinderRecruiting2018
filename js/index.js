@@ -9,12 +9,15 @@ $(document).ready(function() {
   var deg = 0;
   var $card, $cardReject, $cardLike;
 
-  // Additional Variables
+ // count topics by major(s)
 
   var countIST = 0;     // Information Sciences & Tech ( Design & Dev, Integration & App, People & Org.)
   var countSRA= 0;      // Security Risk Analysis
   var countDS = 0;      // Data Science
   var countCyber = 0;   // Cyber Security
+
+
+  // Major topics
 
   var rightSwipeTopics =[]; // Array that will contain the topics liked by user
 
@@ -42,6 +45,22 @@ $(document).ready(function() {
                               "IT Infrastructure",
                               "Ethical Hacking"];
 
+  var istSra = ["Work Preference: Teamwork"]; //
+
+  var istDs = ["Database Management"]; //
+
+  var istDsSra = ["Business & Tech Applications"];
+
+  var dsCyber = ["Work Preference: Individual"]; //
+
+  var sraCyber = ["Malware (Viruses, Spyware, Worms, etc)"]; //
+
+  var istCyberDs = ["Coding"]; //
+
+  var sraCyberIst = ["Network Security"]; //
+
+  var sraCyberDs = ["Analytical Thinking"]; //
+
 
 
 
@@ -63,32 +82,89 @@ $(document).ready(function() {
     var example = document.getElementsByClassName("demo__card__we"); // Array of all topics. Index starts with topics from Z-A, A being the last index.
     numOfCards--;
 
-    if (pullDeltaX >= decisionVal) {
+    if (pullDeltaX >= decisionVal) {  // Add points to each major if right swiped
       $card.addClass("to-right");
 
       rightSwipeTopics.push(example[numOfCards].textContent);  // May delete Later if not used (adds all right swipes to list)
 
 
-      var compareIST = istTopics.indexOf(example[numOfCards].textContent);
-      var compareSRA = sraTopics.indexOf(example[numOfCards].textContent);
-      var compareDS = dsTopics.indexOf(example[numOfCards].textContent);
-      var compareCyber = cyberTopics.indexOf(example[numOfCards].textContent);
+      var checkIst = istTopics.indexOf(example[numOfCards].textContent);
+      var checkSra = sraTopics.indexOf(example[numOfCards].textContent);
+      var checkDs = dsTopics.indexOf(example[numOfCards].textContent);
+      var checkCyber = cyberTopics.indexOf(example[numOfCards].textContent);
 
-      if(compareIST > -1){
+      var checkIstSra = istSra.indexOf(example[numOfCards].textContent);
+      var checkIstDs = istDs.indexOf(example[numOfCards].textContent);
+      var checkDsCyber = dsCyber.indexOf(example[numOfCards].textContent);
+      var checkSraCyber = sraCyber.indexOf(example[numOfCards].textContent);
+      var checkIstCyberDs = istCyberDs.indexOf(example[numOfCards].textContent);
+      var checkSraCyberIst = sraCyberIst.indexOf(example[numOfCards].textContent);
+      var checkSraCyberDs = sraCyberDs.indexOf(example[numOfCards].textContent);
+      var checkIstDsSra = istDsSra.indexOf(example[numOfCards].textContent);
+
+      if(checkIst > -1){
         countIST++;
       }
 
-      if(compareSRA > -1){
+      if(checkSra > -1){
          countSRA++;
       }
 
-      if(compareDS > -1){
+      if(checkDs > -1){
          countDS++;
        }
 
-      if(compareCyber > -1){
+      if(checkCyber > -1){
          countCyber++;
       }
+
+      if(checkIstSra > -1){
+         countIST++;
+         countSRA++;
+      }
+
+      if(checkIstDs > -1){
+         countIST++;
+         countDS++;
+      }
+
+      if(checkDsCyber > -1){
+         countDS++;
+         countCyber++;
+      }
+
+      if(checkSraCyber > -1){
+         countSRA++;
+         countCyber++;
+
+      }
+      if(checkSraCyberDs > -1){
+         countSRA++;
+         countCyber++;
+         countDS++;
+      }
+
+      if(checkSraCyberIst > -1){
+         countSRA++;
+         countCyber++
+         countIST++;
+      }
+
+      if(checkIstCyberDs > -1){
+         countDS++;
+         countCyber++
+         countIST++;
+
+      }
+
+      if(checkIstDsSra > -1){
+         countDS++;
+         countIST++;
+         countSRA++;
+
+      }
+
+
 
 //   Testing Purposes
 
@@ -96,6 +172,7 @@ $(document).ready(function() {
       console.log("SRA: " + countSRA);
       console.log("DS: " + countDS);
       console.log("Cyber: " + countCyber);
+
 
 //    End Test
 
