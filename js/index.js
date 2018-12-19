@@ -20,26 +20,26 @@ $(document).ready(function() {
 
   var istTopics = ["Website Development",
                                "Application Development",
-                               "Cloud computing",
+                               "Cloud Computing",
                                "Troubleshooting",
-                               "Human Centered Design"];
+                               "Human-Centered Design"];
 
   var sraTopics = ["Puzzle Cracking",
-                            "Cryptology / Encryption",
+                            "Cryptology (ex: Encryption, Ciphers, RSA, Knapsack)",
                              "Mitigation Strategies",
                              "Vulnerability Analysis",
-                             "Risk assessment"];
+                             "Risk Assessment"];
 
   var dsTopics = ["Data Analysis",
                            "Applied Mathematics",
-                           "Artificial Intelligence (AI)",
+                           "Artificial Intelligence (A.I)",
                            "Big Data",
-                           "Data visualization"];
+                           "Data Visualization"];
 
   var cyberTopics = ["Digital Crime Solving",
                               "Cyber Threat Analysis",
-                              "Data privacy",
-                              "IT infrastructure",
+                              "Data Privacy",
+                              "IT Infrastructure",
                               "Ethical Hacking"];
 
 
@@ -66,59 +66,45 @@ $(document).ready(function() {
     if (pullDeltaX >= decisionVal) {
       $card.addClass("to-right");
 
-      rightSwipeTopics.push(example[numOfCards].textContent);  //adds right swipe topics to array
+      rightSwipeTopics.push(example[numOfCards].textContent);  // May delete Later if not used (adds all right swipes to list)
+
+
+      var compareIST = istTopics.indexOf(example[numOfCards].textContent);
+      var compareSRA = sraTopics.indexOf(example[numOfCards].textContent);
+      var compareDS = dsTopics.indexOf(example[numOfCards].textContent);
+      var compareCyber = cyberTopics.indexOf(example[numOfCards].textContent);
+
+      if(compareIST > -1){
+        countIST++;
+      }
+
+      if(compareSRA > -1){
+         countSRA++;
+      }
+
+      if(compareDS > -1){
+         countDS++;
+       }
+
+      if(compareCyber > -1){
+         countCyber++;
+      }
+
+//   Testing Purposes
+
+      console.log("IST: " + countIST);
+      console.log("SRA: " + countSRA);
+      console.log("DS: " + countDS);
+      console.log("Cyber: " + countCyber);
+
+//    End Test
+
 
     } else if (pullDeltaX <= -decisionVal) {
       $card.addClass("to-left");
     }
 
-
-    ///// Start of Progress code
-
-   // Need to collect only cards swiped
-
-
-    var condition = false;
-
-    if(condition == false){
-    istTopics.forEach(function(element){
-        if(example == element){
-            //condition = true;
-        }
-    });
-
-    }
-
-    if(condition == false){
-    sraTopics.forEach(function(element){
-        if(example == element){
-            document.write("yay");
-        }
-    });
-
-    }
-    if(condition == false){
-    dsTopics.forEach(function(element){
-        if(example == element){
-            document.write("yay");
-        }
-    });
-}
-    if(condition == false){
-    cyberTopics.forEach(function(element){
-        if(example == element){
-            document.write("yay");
-        }
-    });
-
-    }
-
-    condition = false;
-
-
-
-
-    ///// end of in progress code
+//*** Original Code. May Delete late if not necessary***
 
 //    if (Math.abs(pullDeltaX) >= decisionVal) {
 //      $card.addClass("inactive");
@@ -132,6 +118,8 @@ $(document).ready(function() {
 //        }
 //      }, 300);
 //    }
+
+//*** End of Original Code.***
 
     if (Math.abs(pullDeltaX) < decisionVal) {
       $card.addClass("reset");
