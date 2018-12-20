@@ -181,7 +181,7 @@ $(document).ready(function() {
       $card.addClass("to-left");
     }
 
-//*** Original Code. May Delete late if not necessary***
+//*** Original Code. May Delete later if not necessary***
 
 //    if (Math.abs(pullDeltaX) >= decisionVal) {
 //      $card.addClass("inactive");
