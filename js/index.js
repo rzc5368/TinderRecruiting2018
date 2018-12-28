@@ -1,3 +1,6 @@
+
+var major = "no"
+
 $(document).ready(function() {
 
 
@@ -75,6 +78,7 @@ $(document).ready(function() {
     $cardReject.css("opacity", rejectOpacity);
     $cardLike.css("opacity", likeOpacity);
   };
+
 
 
   function release() {
@@ -164,19 +168,16 @@ $(document).ready(function() {
 
       }
 
-    console.log(cardsCounter);
-    if(numOfCards== 26){
-          console.log("hey");
-          window.location.href = '/TinderRecruiting2018/ScorePage.html';
-    }
+
+
 
 
 //   Testing Purposes
 
-//      console.log("IST: " + countIST);
-//      console.log("SRA: " + countSRA);
-//      console.log("DS: " + countDS);
-//      console.log("Cyber: " + countCyber);
+      console.log("IST: " + countIST);
+      console.log("SRA: " + countSRA);
+      console.log("DS: " + countDS);
+      console.log("Cyber: " + countCyber);
 
 
 //    End Test
@@ -185,6 +186,42 @@ $(document).ready(function() {
     } else if (pullDeltaX <= -decisionVal) {
       $card.addClass("to-left");
     }
+
+
+
+    if(numOfCards== 25){
+
+       var max = Math.max(countSRA, countIST, countDS, countCyber);
+
+       if(countSRA == max){
+            major+= "Security Risk Analysis";
+       }
+       if(countIST == max){
+           major+= "Information Science & Technology";
+       }
+       if(countDS == max){
+           major+= "Data Analysis";
+       }
+       if(countCyber == max){
+           major+= "Cyber Security";
+
+       }
+
+
+
+
+
+
+
+       window.location.href = '/TinderRecruiting2018/ScorePage.html' ;
+
+
+
+
+
+    }
+
+
 
 //*** Original Code. May Delete later if not necessary***
 
@@ -241,4 +278,18 @@ $(document).ready(function() {
 
 
 });
+
+
+//function displayMajor(major) {
+//
+//    console.log(major);
+//
+//    var example = document.getElementById("match").innerHTML= "kno";
+//
+//    console.log(example);
+//
+//
+//
+//
+//};
 
