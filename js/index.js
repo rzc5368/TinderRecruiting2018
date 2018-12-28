@@ -164,14 +164,19 @@ $(document).ready(function() {
 
       }
 
+    console.log(cardsCounter);
+    if(numOfCards== 26){
+          console.log("hey");
+          window.location.href = '/TinderRecruiting2018/ScorePage.html';
+    }
 
 
 //   Testing Purposes
 
-      console.log("IST: " + countIST);
-      console.log("SRA: " + countSRA);
-      console.log("DS: " + countDS);
-      console.log("Cyber: " + countCyber);
+//      console.log("IST: " + countIST);
+//      console.log("SRA: " + countSRA);
+//      console.log("DS: " + countDS);
+//      console.log("Cyber: " + countCyber);
 
 
 //    End Test
@@ -210,6 +215,7 @@ $(document).ready(function() {
       animating = false;
     }, 300);
   };
+
 
   $(document).on("mousedown touchstart", ".demo__card:not(.inactive)", function(e) {
     if (animating) return;
