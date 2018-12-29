@@ -1,10 +1,9 @@
-function displayMajor(major) {
 
-    console.log(major);
+function displayMajor() {
 
-    var example = document.getElementById("match").innerHTML= major;
-
-    console.log(example);
-
+    document.getElementById("match").innerHTML = localStorage.getmajor;
 
 };
+
+
+

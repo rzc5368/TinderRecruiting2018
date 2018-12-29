@@ -1,7 +1,7 @@
 
-var major = "no"
 
 $(document).ready(function() {
+
 
 
   var animating = false;
@@ -19,6 +19,9 @@ $(document).ready(function() {
   var countDS = 0;      // Data Science
   var countCyber = 0;   // Cyber Security
 
+ // selected major variable after right swiping
+
+  var major = "";
 
   // Major topics
 
@@ -174,10 +177,10 @@ $(document).ready(function() {
 
 //   Testing Purposes
 
-      console.log("IST: " + countIST);
-      console.log("SRA: " + countSRA);
-      console.log("DS: " + countDS);
-      console.log("Cyber: " + countCyber);
+//      console.log("IST: " + countIST);
+//      console.log("SRA: " + countSRA);
+//      console.log("DS: " + countDS);
+//      console.log("Cyber: " + countCyber);
 
 
 //    End Test
@@ -210,17 +213,13 @@ $(document).ready(function() {
 
 
 
+    localStorage.getmajor = major;
 
-
-
-       window.location.href = '/TinderRecruiting2018/ScorePage.html' ;
-
-
+     window.location.href = '/TinderRecruiting2018/ScorePage.html' ;
 
 
 
     }
-
 
 
 //*** Original Code. May Delete later if not necessary***
@@ -280,16 +279,7 @@ $(document).ready(function() {
 });
 
 
-//function displayMajor(major) {
-//
-//    console.log(major);
-//
-//    var example = document.getElementById("match").innerHTML= "kno";
-//
-//    console.log(example);
-//
-//
-//
-//
-//};
+
+
+
 
