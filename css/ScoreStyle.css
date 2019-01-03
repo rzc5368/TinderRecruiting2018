@@ -1,20 +1,44 @@
-h1 {
+#header h1 {
+
+    height: 100px;
+    background-color: blue; /* For browsers that do not support gradients */
+    background-image: linear-gradient(blue, white); /* Standard syntax (must be last) */
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
 
     color: black;
     align: center;
     font-family: Rouge Script, cursive;
-    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
-
+    text-shadow: 4px 3px 0px #C0C0C0, 9px 8px 0px rgba(0,0,0,0.15);
 
 }
+
+#header hr {
+    display: block;
+    height: 15px;
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: -0.9em 0;
+    padding: 0;
+}
+
+
 
 h2{
     color:black;
     font-family: sans-serif;
 
+}
+
+#image{
+
 
 
 }
+
+
 
 dl {
   display: flex;

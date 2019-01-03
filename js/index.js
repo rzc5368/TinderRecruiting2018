@@ -173,8 +173,6 @@ $(document).ready(function() {
 
 
 
-
-
 //   Testing Purposes
 
 //      console.log("IST: " + countIST);
@@ -189,8 +187,6 @@ $(document).ready(function() {
     } else if (pullDeltaX <= -decisionVal) {
       $card.addClass("to-left");
     }
-
-
 
     if(numOfCards== 25){
 
@@ -209,9 +205,6 @@ $(document).ready(function() {
            major+= "Cyber Security";
 
        }
-
-
-
 
     localStorage.getmajor = major;
 
