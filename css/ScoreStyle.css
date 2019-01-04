@@ -19,7 +19,7 @@
     display: block;
     height: 15px;
     border: 0;
-    border-top: 2px solid #ccc;
+    border-top: 0.02px solid #ccc;
     margin: -0.9em 0;
     padding: 0;
 }
@@ -37,6 +37,29 @@ h2{
 
 
 }
+
+.boxes {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+
+.boxes > div {
+
+  margin: 10px;
+  width: 250px;
+  height: 420px;
+  padding: 15px;
+  background-color: #E6E6FA;
+  box-shadow: 5px 5px;
+
+}
+
+
+}
+
 
 
 

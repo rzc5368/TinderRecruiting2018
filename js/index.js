@@ -199,7 +199,7 @@ $(document).ready(function() {
            major+= "Information Science & Technology";
        }
        if(countDS == max){
-           major+= "Data Analysis";
+           major+= "Data Sciences";
        }
        if(countCyber == max){
            major+= "Cyber Security";
