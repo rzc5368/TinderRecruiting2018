@@ -13,9 +13,7 @@
     align: center;
     font-family: Rouge Script, cursive;
     text-shadow: 2px 3px 0px #FFD700, 9px 8px 0px rgba(0,0,0,0.15);
-
 }
-
 
 #header hr {
     display: block;
@@ -33,34 +31,66 @@
   text-shadow: 1px 1px 0px #ededed, 3px 2px 0px #FFD700;
 }
 
-
-
-h2{
-    color:black;
-    font-family: sans-serif;
-
-}
-
-
 .boxes {
   display: flex;
   justify-content: center;
 
-
 }
-
 
 .boxes > div {
 
   margin: 10px;
   width: 250px;
-  height: 420px;
+  height: 460px;
   padding: 15px;
   background-color: #E6E6FA;
   box-shadow: 5px 5px;
 
 }
 
+.boxes .Box1 i {
+
+    font-size:60px;
+    color: #F08080;
+    text-shadow:2px 2px 4px #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.boxes .Box2 i {
+
+
+    font-size:60px;
+    color: #7FFF00;
+    text-shadow:2px 2px 4px #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.boxes .Box3 i {
+
+    font-size:60px;
+    color:lightblue;
+    text-shadow:2px 2px 4px #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.boxes .Box4 i {
+
+    font-size:60px;
+    color: #FF8C00;
+    display: flex;
+    justify-content: center;
+}
+
+.boxes hr{
+    display: block;
+    height: 15px;
+    border: 0;
+    border-top: 0.02px solid #ccc;
+    margin: -0.1em 0;
+    padding: 0;
 
 }
 
