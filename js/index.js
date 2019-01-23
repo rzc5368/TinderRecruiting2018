@@ -188,7 +188,7 @@ $(document).ready(function() {
       $card.addClass("to-left");
     }
 
-    if(numOfCards== 25){
+    if(numOfCards== 28){
 
        var max = Math.max(countSRA, countIST, countDS, countCyber);
 
