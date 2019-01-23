@@ -206,9 +206,29 @@ $(document).ready(function() {
 
        }
 
-    localStorage.getmajor = major;
+//     console.log(major);
 
-     window.location.href = '/TinderRecruiting2018/ScorePage.html' ;
+
+
+        localStorage.getmajor = major;  //*** the index page will redirect to a different html according to the major with the highest score ***
+
+        var chosenMajor =  localStorage.getmajor;
+
+        if(chosenMajor == "Data Sciences"){
+            window.location.href = '/TinderRecruiting2018/ScorePage.html' ;
+        }
+        else if(chosenMajor == "Information Science & Technology"){
+            window.location.href = '/TinderRecruiting2018/ScorePageIST.html' ;
+
+        }
+        else if(chosenMajor == "Security Risk Analysis"){
+            window.location.href = '/TinderRecruiting2018/ScorePageSRA.html' ;
+        }
+        else if(chosenMajor == "Cyber Security"){
+              window.location.href = '/TinderRecruiting2018/ScorePageCS.html' ;
+        }
+
+
 
 
 
