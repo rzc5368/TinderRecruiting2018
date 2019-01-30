@@ -237,3 +237,30 @@ body {
   display:block;
 }
 
+button.like{
+    align: center;
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+	line-heigth: 20px;
+	border-radius: 50%;
+	color: #bc204b;
+	background-color: #fff;
+	border-color: #fff;
+	border-width: 2px;
+	font-size: 40px;
+}
+
+button.dislike{
+    align: center;
+	width: 70px;
+	height: 70px;
+	margin: auto 13.5rem;
+	line-heigth: 20px;
+	border-radius: 50%;
+	color: #91959C;
+	background-color: #fff;
+	border-color: #fff;
+	border-width: 2px;
+	font-size: 40px;
+}
