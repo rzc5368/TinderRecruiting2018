@@ -251,36 +251,6 @@ $(document).ready(function() {
 //    }
 
 //*** End of Original Code.***
-function createButtonListener(like) {
-  return function (event) {
-    var cards = document.querySelectorAll('.demo__card:not(.removed)');
-    var moveOutWidth = document.body.clientWidth * 1.5;
-
-    if (!cards.length) return false;
-
-    var card = cards[0];
-
-    card.classList.add('removed');
-
-    if (like) {
-      card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
-    } else {
-      card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(30deg)';
-    }
-      }
-
-        initCards();
-
-        event.preventDefault();
-      };
-    }
-
-    var dislikeListener = createButtonListener(false);
-    var likeListener = createButtonListener(true);
-
-    dislike.addEventListener('click', dislikeListener);
-    like.addEventListener('click', likeListener);
-    //button interaction with card
 
     if (Math.abs(pullDeltaX) < decisionVal) {
       $card.addClass("reset");
@@ -315,17 +285,37 @@ function createButtonListener(like) {
       $(document).off("mousemove touchmove mouseup touchend");
       if (!pullDeltaX) return; // prevents from rapid click events
       release();
-
-
     });
-
   });
- });
+});
+function createButtonListener(love) {
+  return function (e) {
+    var $cards = $(".demo__card__choice.m--reject", $card);
+    var moveOutWidth = document.getElementsByClassName * 1.5;
 
+    if (!pullDeltaX) return false;
 
+    var $card = $cards[];
 
+    $card.classList.add('remove.Class');
 
+    if (love) {
+      $card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
+    } else {
+      $card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(30deg)';
+    }
 
+    initCards();
+
+    event.preventDefault();
+  };
+}
+
+var nopeListener = createButtonListener(false);
+var loveListener = createButtonListener(true);
+
+nope.addEventListener('click', nopeListener);
+love.addEventListener('click', loveListener);
 
 
 
