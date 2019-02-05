@@ -175,10 +175,10 @@ $(document).ready(function() {
 
 //   Testing Purposes
 
-//      console.log("IST: " + countIST);
-//      console.log("SRA: " + countSRA);
-//      console.log("DS: " + countDS);
-//      console.log("Cyber: " + countCyber);
+      console.log("IST: " + countIST);
+      console.log("SRA: " + countSRA);
+      console.log("DS: " + countDS);
+      console.log("Cyber: " + countCyber);
 
 
 //    End Test
@@ -188,25 +188,26 @@ $(document).ready(function() {
       $card.addClass("to-left");
     }
 
-    if(numOfCards== 28){
+    if(numOfCards== 25){
 
        var max = Math.max(countSRA, countIST, countDS, countCyber);
 
        if(countSRA == max){
-            major+= "Security Risk Analysis";
+            major+= " Security Risk Analysis";
        }
        if(countIST == max){
-           major+= "Information Science & Technology";
+           major+= " Information Science & Technology";
        }
        if(countDS == max){
-           major+= "Data Sciences";
+           major+= " Data Sciences";
        }
        if(countCyber == max){
-           major+= "Cyber Security";
+           major+= " Cyber Security";
 
        }
 
-//     console.log(major);
+     console.log(major);
+
 
 
 
@@ -214,23 +215,86 @@ $(document).ready(function() {
 
         var chosenMajor =  localStorage.getmajor;
 
-        if(chosenMajor == "Data Sciences"){
+        if(chosenMajor == " Data Sciences"){
             window.location.href = '/TinderRecruiting2018/ScorePage.html' ;
         }
-        else if(chosenMajor == "Information Science & Technology"){
+        else if(chosenMajor == " Information Science & Technology"){
             window.location.href = '/TinderRecruiting2018/ScorePageIST.html' ;
 
         }
-        else if(chosenMajor == "Security Risk Analysis"){
+        else if(chosenMajor == " Security Risk Analysis"){
             window.location.href = '/TinderRecruiting2018/ScorePageSRA.html' ;
         }
-        else if(chosenMajor == "Cyber Security"){
+        else if(chosenMajor == " Cyber Security"){
               window.location.href = '/TinderRecruiting2018/ScorePageCS.html' ;
         }
+        else if((chosenMajor == (" Information Science & Technology Data Sciences"))){
+            var majorWindows = ['/TinderRecruiting2018/ScorePageIST.html','/TinderRecruiting2018/ScorePage.html' ]
+            var randWindow = Math.floor(Math.random() * 2);
 
-
-
-
+            window.location.href = majorWindows[randWindow];
+//            console.log("1"); // testing purposes **DELETE If not needed later**
+        }
+        else if((chosenMajor == " Security Risk Analysis Data Sciences")){
+            var majorWindows = ['/TinderRecruiting2018/ScorePageSRA.html', '/TinderRecruiting2018/ScorePage.html' ]
+            var randWindow = Math.floor(Math.random() * 2);
+            window.location.href = majorWindows[randWindow];
+//            console.log("2");
+        }
+        else if((chosenMajor == " Data Sciences Cyber Security")){
+            var majorWindows = ['/TinderRecruiting2018/ScorePageCS.html','/TinderRecruiting2018/ScorePage.html' ]
+            var randWindow = Math.floor(Math.random() * 2);
+            window.location.href = majorWindows[randWindow];
+//            console.log("3");
+        }
+        else if((chosenMajor == " Security Risk Analysis Information Science & Technology")){
+            var majorWindows = ['/TinderRecruiting2018/ScorePageIST.html', '/TinderRecruiting2018/ScorePageSRA.html' ]
+            var randWindow = Math.floor(Math.random() * 2);
+            window.location.href = majorWindows[randWindow];
+//            console.log("4");
+        }
+        else if((chosenMajor == " Information Science & Technology Cyber Security")){
+            var majorWindows = ['/TinderRecruiting2018/ScorePageIST.html', '/TinderRecruiting2018/ScorePageCS.html' ]
+            var randWindow = Math.floor(Math.random() * 2);
+            window.location.href = majorWindows[randWindow];
+//            console.log("5");
+        }
+        else if((chosenMajor == " Security Risk Analysis Cyber Security") ){
+            var majorWindows = ['/TinderRecruiting2018/ScorePageSRA.html', '/TinderRecruiting2018/ScorePageCS.html' ]
+            var randWindow = Math.floor(Math.random() * 2);
+            window.location.href = majorWindows[randWindow];
+//            console.log("6");
+        }
+        else if((chosenMajor == " Security Risk Analysis Information Science & Technology Data Sciences")){
+             var majorWindows = ['/TinderRecruiting2018/ScorePageIST.html', '/TinderRecruiting2018/ScorePageSRA.html','/TinderRecruiting2018/ScorePage.html' ]
+             var randWindow = Math.floor(Math.random() * 3);
+             window.location.href = majorWindows[randWindow];
+//            console.log("7");
+         }
+        else if((chosenMajor == " Security Risk Analysis Information Science & Technology Cyber Security")){
+             var majorWindows = ['/TinderRecruiting2018/ScorePageIST.html', '/TinderRecruiting2018/ScorePageSRA.html', '/TinderRecruiting2018/ScorePageCS.html' ]
+             var randWindow = Math.floor(Math.random() * 3);
+             window.location.href = majorWindows[randWindow];
+//            console.log("8");
+         }
+        else if((chosenMajor == " Security Risk Analysis Data Sciences Cyber Security")){
+            var majorWindows = ['/TinderRecruiting2018/ScorePageSRA.html', '/TinderRecruiting2018/ScorePageCS.html','/TinderRecruiting2018/ScorePage.html' ]
+            var randWindow = Math.floor(Math.random() * 3);
+            window.location.href = majorWindows[randWindow];
+//            console.log("9");
+        }
+        else if((chosenMajor == " Information Science & Technology Data Sciences Cyber Security")){
+            var majorWindows = ['/TinderRecruiting2018/ScorePageCS.html','/TinderRecruiting2018/ScorePage.html','/TinderRecruiting2018/ScorePageIST.html' ]
+            var randWindow = Math.floor(Math.random() * 3);
+            window.location.href = majorWindows[randWindow];
+//            console.log("10");
+        }
+        else if((chosenMajor == " Security Risk Analysis Information Science & Technology Data Sciences Cyber Security")){
+            var majorWindows = ['/TinderRecruiting2018/ScorePageCS.html','/TinderRecruiting2018/ScorePage.html','/TinderRecruiting2018/ScorePageIST.html', '/TinderRecruiting2018/ScorePageSRA.html' ]
+            var randWindow = Math.floor(Math.random() * 3);
+            window.location.href = majorWindows[randWindow];
+//            console.log("11");
+        }
 
     }
 
@@ -288,34 +352,35 @@ $(document).ready(function() {
     });
   });
 });
-function createButtonListener(love) {
-  return function (e) {
-    var $cards = $(".demo__card__choice.m--reject", $card);
-    var moveOutWidth = document.getElementsByClassName * 1.5;
 
-    if (!pullDeltaX) return false;
-
-    var $card = $cards[];
-
-    $card.classList.add('remove.Class');
-
-    if (love) {
-      $card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
-    } else {
-      $card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(30deg)';
-    }
-
-    initCards();
-
-    event.preventDefault();
-  };
-}
-
-var nopeListener = createButtonListener(false);
-var loveListener = createButtonListener(true);
-
-nope.addEventListener('click', nopeListener);
-love.addEventListener('click', loveListener);
+//function createButtonListener(love) {
+//  return function (e) {
+//    var $cards = $(".demo__card__choice.m--reject", $card);
+//    var moveOutWidth = document.getElementsByClassName * 1.5;
+//
+//    if (!pullDeltaX) return false;
+//
+//    var $card = $cards[];
+//
+//    $card.classList.add('remove.Class');
+//
+//    if (love) {
+//      $card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
+//    } else {
+//      $card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(30deg)';
+//    }
+//
+//    initCards();
+//
+//    event.preventDefault();
+//  };
+//}
+//
+//var nopeListener = createButtonListener(false);
+//var loveListener = createButtonListener(true);
+//
+//nope.addEventListener('click', nopeListener);
+//love.addEventListener('click', loveListener);
 
 
 
