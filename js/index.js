@@ -1,16 +1,16 @@
-
-
 $(document).ready(function() {
 
 
 
   var animating = false;
   var cardsCounter = 0;
+    var cardTotals = 28;
   var numOfCards = 28;
   var decisionVal = 80;
   var pullDeltaX = 0;
   var deg = 0;
   var $card, $cardReject, $cardLike;
+
 
  // count topics by major(s)
 
@@ -188,9 +188,11 @@ $(document).ready(function() {
       $card.addClass("to-left");
     }
 
-    if(numOfCards== 25){
 
-       var max = Math.max(countSRA, countIST, countDS, countCyber);
+
+    if(numOfCards== 18){ // numOfCards == 0 if you want all cards to display
+
+       var max = Math.max(countSRA, countIST, countDS, countCyber); //Gets totals of all 4 majors and gets Max
 
        if(countSRA == max){
             major+= " Security Risk Analysis";
@@ -205,9 +207,12 @@ $(document).ready(function() {
            major+= " Cyber Security";
 
        }
-
-     console.log(major);
-
+//*/ May not need at the moment */
+      localStorage.getcountIST = countIST;
+      localStorage.getcountCyber = countCyber;
+      localStorage.getcountDS = countDS;
+      localStorage.getcountSRA = countSRA;
+      localStorage.getcardTotals = cardTotals;
 
 
 
@@ -219,6 +224,7 @@ $(document).ready(function() {
             window.location.href = '/TinderRecruiting2018/ScorePage.html' ;
         }
         else if(chosenMajor == " Information Science & Technology"){
+//            localStorage.setItem("CountIST", countIST);
             window.location.href = '/TinderRecruiting2018/ScorePageIST.html' ;
 
         }
