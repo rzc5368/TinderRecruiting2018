@@ -1,3 +1,9 @@
+#wrapper {
+      width:auto;
+      height: auto;
+      margin:0 auto;
+}
+
 #header h1 {
     height: 150px;
     background-color: blue; /* For browsers that do not support gradients */
