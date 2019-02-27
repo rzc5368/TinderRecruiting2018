@@ -190,7 +190,7 @@ $(document).ready(function() {
 
 
 
-    if(numOfCards== 18){ // numOfCards == 0 if you want all cards to display
+    if(numOfCards== 0){ // numOfCards == 0 if you want all cards to display
 
        var max = Math.max(countSRA, countIST, countDS, countCyber); //Gets totals of all 4 majors and gets Max
 

@@ -13,7 +13,7 @@
   background-color: inherit;
   float: left;
   position: relative;
-  right: -42%; /* or right 50% */
+  right: -45%; /* or right 50% */
   text-align: center;
   border: none;
   outline: none;
@@ -101,7 +101,7 @@
 
   margin: 10px;
   width: 250px;
-  height: 460px;
+  height: auto px;
   padding: 15px;
   background-color: #E6E6FA;
   box-shadow: 5px 5px;
@@ -181,10 +181,10 @@ dt {
 }
 
 .text {
-  font-weight: 600;
+  font-weight: 350;
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 90px;
   width: 130px;
   background-color: white;
   position: absolute;
@@ -194,20 +194,20 @@ dt {
 
 .percentage {
   font-size: .8em;
-  line-height: 1;
-  text-transform: uppercase;
+  line-height: 2;
   width: 100%;
-  height: 40px;
-  margin-left: 130px;
+  height: 110px;
+  margin-left: 150px;
   background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
 }
 .percentage:after {
   content: "";
   display: block;
+
   background-color: #3d9970;
   width: 50px;
   margin-bottom: 10px;
-  height: 90%;
+  height: 80%;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);

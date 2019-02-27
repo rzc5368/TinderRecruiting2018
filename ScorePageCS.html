@@ -68,8 +68,13 @@
     </div>
 </div>
 
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+        <button class="tablinks" onclick="openTab(event, 'Results')">Results</button>
+        <button class="tablinks" onclick="openTab(event, 'More')">More</button>
+    </div>
 
-
+<div id="About" class="tabcontent">
 <div class="boxes">
     <div class="Box1">
 
@@ -164,11 +169,15 @@
         <li><font size="2"> Incident Responder</font></li>
     </div>
 </div>
+</div>
 
+<div id="Results" align = "center" class="tabcontent">
 <dl>
-    <dt>
+    <h1 align = "center">
         Major with the most right swipes
-    </dt>
+    </h1>
+    <br>
+    <br>
 
     <dd id="istBar" align = "center" class=""><span class="text">Information Science & Technology </span></dd>
     <dd id ="sraBar" align = "center" class=""><span class="text">Security Risk Analysis</span></dd>
@@ -178,7 +187,9 @@
     <!--<dd class="percentage percentage-2"><span class="text">Android 4.4: 2%</span></dd>-->
 
 </dl>
+</div>
 <script> majorGraphCalculations();</script>
+    <script> openTab(event, 'About');</script>
 </div>
 
 </body>
