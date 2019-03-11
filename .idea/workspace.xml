@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="901e3843-bd7c-42e3-bf3d-b4337f0e4021" name="Default Changelist" comment="Testing push">
+    <list default="true" id="901e3843-bd7c-42e3-bf3d-b4337f0e4021" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScorePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/ScorePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScorePageCS.html" beforeDir="false" afterPath="$PROJECT_DIR$/ScorePageCS.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScorePageIST.html" beforeDir="false" afterPath="$PROJECT_DIR$/ScorePageIST.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScorePageSRA.html" beforeDir="false" afterPath="$PROJECT_DIR$/ScorePageSRA.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/ScoreStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/ScoreStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/ScorePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ScorePage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,6 +103,26 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1151300972">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="19" />
+          <entry key="txt" value="27" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="19" />
+          <entry key="PLAIN_TEXT" value="27" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -124,7 +138,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
+            <state relative-caret-position="476">
               <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
@@ -133,7 +147,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="391">
               <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
             </state>
           </provider>
@@ -142,17 +156,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/ScoreStyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13230">
+            <state relative-caret-position="14994">
               <caret line="882" column="13" selection-start-line="882" selection-start-column="13" selection-end-line="882" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ScorePage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="76" column="82" selection-start-line="76" selection-start-column="82" selection-end-line="76" selection-end-column="82" />
+            <state relative-caret-position="509">
+              <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
               <folding>
                 <element signature="n#style#0;n#h6#0;n#dl#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -163,13 +177,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/ScorePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
+            <state relative-caret-position="1156">
               <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="545">
@@ -181,8 +195,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScorePageIST.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+            <state relative-caret-position="747">
+              <caret line="225" column="10" selection-start-line="225" selection-start-column="10" selection-end-line="225" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#h6#0;n#dl#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -193,8 +207,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScorePageCS.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3045">
-              <caret line="203" selection-start-line="203" selection-end-line="203" />
+            <state relative-caret-position="2821">
+              <caret line="218" lean-forward="true" selection-start-line="218" selection-end-line="218" />
               <folding>
                 <element signature="n#style#0;n#h6#0;n#dl#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -205,8 +219,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScorePageSRA.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2895">
-              <caret line="193" column="19" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
+            <state relative-caret-position="1564">
+              <caret line="92" column="10" lean-forward="true" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#h6#0;n#dl#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -232,6 +246,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Rodrigo &lt;rzc5368@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -247,12 +266,12 @@
         <option value="$PROJECT_DIR$/form.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/index.js" />
-        <option value="$PROJECT_DIR$/ScorePageIST.html" />
-        <option value="$PROJECT_DIR$/ScorePageSRA.html" />
-        <option value="$PROJECT_DIR$/ScorePage.html" />
         <option value="$PROJECT_DIR$/css/ScoreStyle.css" />
         <option value="$PROJECT_DIR$/js/ScorePage.js" />
         <option value="$PROJECT_DIR$/ScorePageCS.html" />
+        <option value="$PROJECT_DIR$/ScorePage.html" />
+        <option value="$PROJECT_DIR$/ScorePageIST.html" />
+        <option value="$PROJECT_DIR$/ScorePageSRA.html" />
       </list>
     </option>
   </component>
@@ -290,29 +309,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="TinderRecruiting2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinderRecruiting2018" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TinderRecruiting2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinderRecruiting2018" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TinderRecruiting2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinderRecruiting2018" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TinderRecruiting2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinderRecruiting2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Tinder Pictures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TinderRecruiting2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinderRecruiting2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Tinder Pictures" type="462c0819:PsiDirectoryNode" />
-              <item name="Learn More" type="462c0819:PsiDirectoryNode" />
+              <item name="TinderRecruiting20182" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TinderRecruiting20182" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -382,15 +380,22 @@
       <option name="project" value="LOCAL" />
       <updated>1551332922615</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update Tabs and clear form">
+      <created>1552337019275</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1552337019275</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.495" visible="true" weight="0.19709209" />
-      <window_info id="Structure" order="1" sideWeight="0.505" side_tool="true" visible="true" weight="0.19709209" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4940476" visible="true" weight="0.19936034" />
+      <window_info id="Structure" order="1" sideWeight="0.50595236" side_tool="true" visible="true" weight="0.19936034" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -403,10 +408,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2890411" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.28869048" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50201344" side_tool="true" weight="0.17730497" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49798658" visible="true" weight="0.1780822" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49798658" weight="0.17757936" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32936507" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -456,7 +461,9 @@
     <MESSAGE value="Testing push" />
     <MESSAGE value="I added the buttons and made it interact with the cards" />
     <MESSAGE value="put the form in &#10;link the form &#10;updated cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="put the form in &#10;link the form &#10;updated cards" />
+    <MESSAGE value="Update Tabs and clear form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Tabs and clear form" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Tinder Pictures/Overlap/Business &amp; Tech.jpg">
@@ -506,46 +513,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="476">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="391">
           <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/ScoreStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13230">
+        <state relative-caret-position="14994">
           <caret line="882" column="13" selection-start-line="882" selection-start-column="13" selection-end-line="882" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScorePage.html">
+    <entry file="file://$PROJECT_DIR$/js/ScorePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" column="82" selection-start-line="76" selection-start-column="82" selection-end-line="76" selection-end-column="82" />
+        <state relative-caret-position="1156">
+          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="281" column="60" selection-start-line="281" selection-start-column="60" selection-end-line="281" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScorePageSRA.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="92" column="10" lean-forward="true" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#h6#0;n#dl#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/ScorePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScorePageIST.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+        <state relative-caret-position="747">
+          <caret line="225" column="10" selection-start-line="225" selection-start-column="10" selection-end-line="225" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#h6#0;n#dl#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -554,28 +568,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ScorePageCS.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3045">
-          <caret line="203" selection-start-line="203" selection-end-line="203" />
+        <state relative-caret-position="2821">
+          <caret line="218" lean-forward="true" selection-start-line="218" selection-end-line="218" />
           <folding>
             <element signature="n#style#0;n#h6#0;n#dl#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScorePageSRA.html">
+    <entry file="file://$PROJECT_DIR$/ScorePage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2895">
-          <caret line="193" column="19" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
+        <state relative-caret-position="509">
+          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
           <folding>
             <element signature="n#style#0;n#h6#0;n#dl#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="281" column="60" selection-start-line="281" selection-start-column="60" selection-end-line="281" selection-end-column="60" />
         </state>
       </provider>
     </entry>
