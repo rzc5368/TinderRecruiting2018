@@ -44,7 +44,6 @@ function majorGraphCalculations() {
         });
 //***End action Listeners***
 }
-
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -57,4 +56,15 @@ function openTab(evt, tabName) {
   }
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
+}
+function learnMoreActions() {
+     document.getElementById("image1").addEventListener("click", function() {
+        window.location.href = '/TinderRecruiting2018/ScorePageIST.html' ;
+        });
+     document.getElementById("image2").addEventListener("click", function() {
+          window.location.href = '/TinderRecruiting2018/ScorePageSRA.html' ;
+        });
+     document.getElementById("image3").addEventListener("click", function() {
+          window.location.href = '/TinderRecruiting2018/ScorePage.html' ;
+        });
 }
