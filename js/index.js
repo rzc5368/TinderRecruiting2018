@@ -28,30 +28,29 @@ $(document).ready(function() {
   var rightSwipeTopics =[]; // Array that will contain the topics liked by user
 
   var istTopics = ["Website Development",
-                               "Application Development
-                               (ex. Mobile applications are developed)",
-                               "Cloud Computing
-                                            (Ex. A storage like computing services that holds data and other resources available over the internet)",
-                               "Troubleshooting",
-                               "Human-Centered Design"];
+                               "Application Development (Ex. Mobile applications are developed)",
+                               "Cloud Computing (Ex. A storage like computing services that holds data and other resources available over the internet)",
+                               "Troubleshooting (Ex. A way to identify and solve technical issues)",
+                               "Human-Centered Design (Ex. designing for people by involving them in the process)"];
 
-  var sraTopics = ["Puzzle Cracking",
+  var sraTopics = ["Puzzle Cracking (Ex. encoding and decoding messages or solving logic puzzles)",
                             "Cryptology (ex: Encryption, Ciphers, RSA, Knapsack)",
-                             "Mitigation Strategies",
-                             "Vulnerability Analysis",
-                             "Risk Assessment"];
+                             "Mitigation Strategies (Ex. taking steps to reduce negative impact – like disaster recovery)",
+                             "Vulnerability Analysis (Ex. Identifying, quantifying and ranking possible vulnerabilities to threats in a system)",
+                             "Risk Assessment (Ex. Identifying potential risks that can cause harm)"];
 
-  var dsTopics = ["Data Analysis",
-                           "Applied Mathematics",
-                           "Artificial Intelligence (A.I)",
-                           "Big Data",
-                           "Data Visualization"];
+  var dsTopics = ["Data Analysis (Ex: reviewing and modeling data to find useful information)",
+                           "Applied Mathematics (Ex.  application of math by different fields such as science, business, and industry) ",
+                           "Artificial Intelligence (A.I) (Ex. creation of intelligent machines that work and react like humans)",
+                           "Big Data (Ex. extremely large data sets that can be analyzed to identify trends)
+                            "Business & Tech Applications (Ex: technology software used by business)",
+                           "Data Visualization (Ex. Displaying data in charts, graphs, etc.)"];
 
-  var cyberTopics = ["Digital Crime Solving",
-                              "Cyber Threat Analysis",
-                              "Data Privacy",
-                              "IT Infrastructure",
-                              "Ethical Hacking"];
+  var cyberTopics = ["Digital Crime Solving (Ex. Investigation of criminal activities in digital devices)",
+                              "Cyber Threat Analysis (Ex. Identify online vulnerabilities where a cyber-attack could occur)",
+                              "Data Privacy (Ex. How data is collected, shared and used)",
+                              "IT Infrasturcture (Ex. all the technology pieces needed for a business to deliver services or operate/run)",
+                              "Ethical Hacking (Ex. Legally identifying weaknesses in information systems to safeguard against cyber criminals)."];
 
   var istSra = ["Work Preference: Teamwork"]; //
 
