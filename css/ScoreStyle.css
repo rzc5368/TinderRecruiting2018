@@ -13,7 +13,7 @@
   background-color: inherit;
   float: left;
   position: relative;
-  right: -45%; /* or right 50% */
+  right: -42%; /* or right 50% */
   text-align: center;
   border: none;
   outline: none;
@@ -870,3 +870,23 @@ dt {
   }
 }
 /**** End Confetti CSS ****/
+
+/**** Start Inline images CSS ****/
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/**** End Inline Images CSS ****/
