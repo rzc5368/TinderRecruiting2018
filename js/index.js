@@ -360,34 +360,34 @@ $(document).ready(function() {
   });
 });
 
-//function createButtonListener(love) {
-//  return function (e) {
-//    var $cards = $(".demo__card__choice.m--reject", $card);
-//    var moveOutWidth = document.getElementsByClassName * 1.5;
-//
-//    if (!pullDeltaX) return false;
-//
-//    var $card = $cards[];
-//
-//    $card.classList.add('remove.Class');
-//
-//    if (love) {
-//      $card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
-//    } else {
-//      $card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(30deg)';
-//    }
-//
-//    initCards();
-//
-//    event.preventDefault();
-//  };
-//}
-//
-//var nopeListener = createButtonListener(false);
-//var loveListener = createButtonListener(true);
-//
-//nope.addEventListener('click', nopeListener);
-//love.addEventListener('click', loveListener);
+function tinder--buttons {
+  return function (e) {
+    var $cards = $("document.getElementsByClassName("demo__card__we");
+
+
+    //if (!pullDeltaX) return false;
+
+    var $card = $cards[];
+
+    $card.classList.add('remove.Class');
+
+    if (love) {
+      $card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
+    } else {
+      $card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(30deg)';
+    }
+
+    initCards();
+
+    event.preventDefault();
+  };
+}
+
+var nopeListener = createButtonListener(false);
+var loveListener = createButtonListener(true);
+
+nope.addEventListener('click', nopeListener);
+love.addEventListener('click', loveListener);
 
 
 
