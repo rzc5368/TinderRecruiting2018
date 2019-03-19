@@ -1,354 +1,327 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  <title>Tinder-like Card Swipe Interaction</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
+    <title>Tinder-like Card Swipe Interaction</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  
+
 </head>
 
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <div id="wrapper">
-<div class="icon-bar">
-  <img class="active" href="#"  src="Tinder Pictures/footer_logo.png" >
 
-</div>
+    <div class="icon-bar">
 
-  <div class="demo">
-  <header class="demo__header"></header>
-  <div class="demo__content">
-    <div class="demo__card-cont">
-
-      <!--Each "demo_card" below contains the picture and topic in Alphabetical order starting from
-          the the bottom up of the div class="demo_card-cont" -->
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/Overlap/TeamWork.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Work Preference: Teamwork ( Ex. I prefer to work with teams) </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg" >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Work Preference: Individual (Ex. I like to work by myself)  </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/IST/Website Development.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Website Development (Ex. Creating websites)</p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Vulnerability Analysis (Ex. Identifying, quantifying and ranking possible vulnerabilities to threats in a system) </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/IST/Troubleshooting.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Troubleshooting (Ex. A way to identify and solve technical issues) </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Risk Assessment (Ex. Identifying potential risks that can cause harm)  </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/SRA/Puzzle Cracking.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Puzzle Cracking (Ex. encoding and decoding messages or solving logic puzzles) </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Network Security (Ex. Protecting networks against unwanted intruders) </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Mitigation Strategies (Ex. taking steps to reduce negative impact – like disaster recovery)  </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg" >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Malware (Viruses, Spyware, Worms, etc)</p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/CS/IT Infrastructure.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">IT Infrasturcture (Ex. all the technology pieces needed for a business to deliver services or operate/run) </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/IST/HCD.jpeg" >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Human-Centered Design (Ex. designing for people by involving them in the process) </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/CS/Ethical Hacking.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Ethical Hacking (Ex. Legally identifying weaknesses in information systems to safeguard against cyber criminals). </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/CS/Digital Crime Solving.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Digital Crime Solving (Ex. Investigation of criminal activities in digital devices) </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/DS/Data Visualization.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Data Visualization (Ex. Displaying data in charts, graphs, etc.) </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/CS/Data Privacy.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Data Privacy (Ex. How data is collected, shared and used)  </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Database Management (Ex. Organizing and maintaining data) </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/DS/Data Analysis.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Data Analysis (Ex: reviewing and modeling data to find useful information)
-
-          </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/SRA/Cryptology.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Cryptology (ex: Encryption, Ciphers, RSA, Knapsack)</p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Cyber Threat Analysis (Ex. Identify online vulnerabilities where a cyber-attack could occur) </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Coding</p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/IST/Cloud Computing.jpeg" >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Cloud Computing (Ex. A storage like computing services that holds data and other resources available over the internet) </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-          <img class="topic_img" src="Tinder Pictures/Overlap/Business & Tech.jpg" >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Business & Tech Applications (Ex: technology software used by business)  </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/DS/Big Data.jpeg" >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Big Data (Ex. extremely large data sets that can be analyzed to identify trends)
-            Business & Tech Applications </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/DS/Artificial Intelligence.jpeg" >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Artificial Intelligence (A.I) (Ex. creation of intelligent machines that work and react like humans)</p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/DS/Applied Mathematics.jpeg"  >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Applied Mathematics (Ex.  application of math by different fields such as science, business, and industry)  </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/IST/Application Development.jpg" >
-        <div class="demo__card__btm">
-          <p class="demo__card__we">Application Development (Ex. Mobile applications are developed) </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-      <div class="demo__card">
-        <img class="topic_img" src="Tinder Pictures/Overlap/Analytical Thinking.jpeg"  >
-        <div class="demo__card__btm">
-          <p  class="demo__card__we">Analytical Thinking (Ex. Thinking logically to solve problems) </p>
-        </div>
-        <div class="demo__card__choice m--reject"></div>
-        <div class="demo__card__choice m--like"></div>
-        <div class="demo__card__drag"></div>
-      </div>
-
-
-<!--***Card content code from one card from original code. Commented if needed for future reference"***-->
-<!--*** Delete commented code once finished with project ***-->
-
-      <!--<div class="demo__card">-->
-        <!--<div class="demo__card__top purple">-->
-          <!--<div class="demo__card__img"></div>-->
-          <!--<p class="demo__card__name">Hungry cat</p>-->
-        <!--</div>-->
-        <!--<div class="demo__card__btm">-->
-          <!--<p class="demo__card__we">Whatever</p>-->
-        <!--</div>-->
-        <!--<div class="demo__card__choice m&#45;&#45;reject"></div>-->
-        <!--<div class="demo__card__choice m&#45;&#45;like"></div>-->
-        <!--<div class="demo__card__drag"></div>-->
-      <!--</div>-->
-
- <!--*** Card content code for one card ends here ***-->
+        <img class="active" src="Tinder Pictures/footer_logo.png">
 
     </div>
 
-    <div class="tinder--buttons">
-      <button id="nope"><i class="fa fa-remove"></i></button>
-      <button id="love"><i class="fa fa-heart"></i></button>
+    <div class="demo">
+        <header class="demo__header"></header>
+        <div class="demo__content">
+            <div class="demo__card-cont">
+
+                <!--Each "demo_card" below contains the picture and topic in Alphabetical order starting from
+                    the the bottom up of the div class="demo_card-cont" -->
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/Overlap/TeamWork.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Work Preference: Teamwork (Ex. I prefer to work with teams)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Work Preference: Individual (Ex. I like to work by myself)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/IST/Website Development.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Website Development (Ex. Creating websites)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Vulnerability Analysis (Ex. Identifying, quantifying and ranking possible vulnerabilities to threats in a system)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/IST/Troubleshooting.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Troubleshooting (Ex. A way to identify and solve technical issues)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Risk Assessment (Ex. Identifying potential risks that can cause harm)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/SRA/Puzzle Cracking.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Puzzle Cracking (Ex. Encoding and decoding messages or solving logic puzzles)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Network Security (Ex. Protecting networks against unwanted intruders)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Mitigation Strategies (Ex. Taking steps to reduce negative impact – like disaster recovery)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Malware (Viruses, Spyware, Worms, etc)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/CS/IT Infrastructure.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">IT Infrastructure (Ex. All the technology pieces needed for a business to deliver services or operate/run)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/IST/HCD.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Human-Centered Design (Ex. Designing for people by involving them in the process)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/CS/Ethical Hacking.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Ethical Hacking (Ex. Legally identifying weaknesses in information systems to safeguard against cyber criminals)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/CS/Digital Crime Solving.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Digital Crime Solving (Ex. Investigation of criminal activities in digital devices)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/DS/Data Visualization.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Data Visualization (Ex. Displaying data in charts, graphs, etc.)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/CS/Data Privacy.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Data Privacy (Ex. How data is collected, shared and used)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Database Management (Ex. Organizing and maintaining data)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/DS/Data Analysis.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Data Analysis (Ex. Reviewing and modeling data to find useful information)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/SRA/Cryptology.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Cryptology (Ex. Encryption, Ciphers, RSA, Knapsack)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Cyber Threat Analysis (Ex. Identify online vulnerabilities where a cyber-attack could occur)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/Overlap/Coding.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Coding</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/IST/Cloud Computing.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Cloud Computing (Ex. A storage like computing services that holds data and other resources available over the internet)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/Overlap/Business & Tech.jpg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Business & Tech Applications (Ex. Technology software used by business)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/DS/Big Data.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Big Data (Ex. Extremely large data sets that can be analyzed to identify trends)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/DS/Artificial Intelligence.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Artificial Intelligence (A.I) (Ex. Creation of intelligent machines that work and react like humans)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/DS/Applied Mathematics.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Applied Mathematics (Ex.  Application of math by different fields such as science, business, and industry)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/IST/Application Development.jpg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Application Development (Ex. Mobile applications are developed)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <div class="demo__card">
+                    <img class="topic_img" src="Tinder Pictures/Overlap/Analytical Thinking.jpeg">
+                    <div class="demo__card__btm">
+                        <p class="demo__card__we">Analytical Thinking (Ex. Thinking logically to solve problems)</p>
+                    </div>
+                    <div class="demo__card__choice m--reject"></div>
+                    <div class="demo__card__choice m--like"></div>
+                    <div class="demo__card__drag"></div>
+                </div>
+
+                <!--<div class="tinder&#45;&#45;buttons">-->
+                <!--<button id="nope"><i class="fa fa-remove"></i></button>-->
+                <!--<button id="love"><i class="fa fa-heart"></i></button>-->
+                <!--</div>-->
+
+
+                <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+                <script src="js/index.js"></script>
+
+            </div>
+        </div>
+    </div>
 </div>
-  </div>
-
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-  
-
-    <script  src="js/index.js"></script>
-
-
-
-
-</div>
-</div>
-
 </html>

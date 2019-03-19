@@ -27,46 +27,46 @@ $(document).ready(function() {
 
   var rightSwipeTopics =[]; // Array that will contain the topics liked by user
 
-  var istTopics = ["Website Development",
-                               "Application Development (Ex. Mobile applications are developed)",
-                               "Cloud Computing (Ex. A storage like computing services that holds data and other resources available over the internet)",
-                               "Troubleshooting (Ex. A way to identify and solve technical issues)",
-                               "Human-Centered Design (Ex. designing for people by involving them in the process)"];
+   var istTopics = ["Website Development (Ex. Creating websites)",
+                                 "Application Development (Ex. Mobile applications are developed)",
+                                 "Cloud Computing (Ex. A storage like computing services that holds data and other resources available over the internet)",
+                                 "Troubleshooting (Ex. A way to identify and solve technical issues)",
+                                 "Human-Centered Design (Ex. Designing for people by involving them in the process)"];
 
-  var sraTopics = ["Puzzle Cracking (Ex. encoding and decoding messages or solving logic puzzles)",
-                            "Cryptology (ex: Encryption, Ciphers, RSA, Knapsack)",
-                             "Mitigation Strategies (Ex. taking steps to reduce negative impact – like disaster recovery)",
-                             "Vulnerability Analysis (Ex. Identifying, quantifying and ranking possible vulnerabilities to threats in a system)",
-                             "Risk Assessment (Ex. Identifying potential risks that can cause harm)"];
+    var sraTopics = ["Puzzle Cracking (Ex. Encoding and decoding messages or solving logic puzzles)",
+                              "Cryptology (Ex. Encryption, Ciphers, RSA, Knapsack)",
+                               "Mitigation Strategies (Ex. Taking steps to reduce negative impact – like disaster recovery)",
+                               "Vulnerability Analysis (Ex. Identifying, quantifying and ranking possible vulnerabilities to threats in a system)",
+                               "Risk Assessment (Ex. Identifying potential risks that can cause harm)"];
 
-  var dsTopics = ["Data Analysis (Ex: reviewing and modeling data to find useful information)",
-                           "Applied Mathematics (Ex.  application of math by different fields such as science, business, and industry) ",
-                           "Artificial Intelligence (A.I) (Ex. creation of intelligent machines that work and react like humans)",
-                           "Big Data (Ex. extremely large data sets that can be analyzed to identify trends)
-                            "Business & Tech Applications (Ex: technology software used by business)",
-                           "Data Visualization (Ex. Displaying data in charts, graphs, etc.)"];
+    var dsTopics = ["Data Analysis (Ex. Reviewing and modeling data to find useful information)",
+                             "Applied Mathematics (Ex.  Application of math by different fields such as science, business, and industry)",
+                             "Artificial Intelligence (A.I) (Ex. Creation of intelligent machines that work and react like humans)",
+                             "Big Data (Ex. Extremely large data sets that can be analyzed to identify trends)",
+                             "Data Visualization (Ex. Displaying data in charts, graphs, etc.)"];
 
-  var cyberTopics = ["Digital Crime Solving (Ex. Investigation of criminal activities in digital devices)",
-                              "Cyber Threat Analysis (Ex. Identify online vulnerabilities where a cyber-attack could occur)",
-                              "Data Privacy (Ex. How data is collected, shared and used)",
-                              "IT Infrasturcture (Ex. all the technology pieces needed for a business to deliver services or operate/run)",
-                              "Ethical Hacking (Ex. Legally identifying weaknesses in information systems to safeguard against cyber criminals)."];
+    var cyberTopics = ["Digital Crime Solving (Ex. Investigation of criminal activities in digital devices)",
+                                "Cyber Threat Analysis (Ex. Identify online vulnerabilities where a cyber-attack could occur)",
+                                "Data Privacy (Ex. How data is collected, shared and used)",
+                                "IT Infrastructure (Ex. All the technology pieces needed for a business to deliver services or operate/run)",
+                                "Ethical Hacking (Ex. Legally identifying weaknesses in information systems to safeguard against cyber criminals)"];
 
-  var istSra = ["Work Preference: Teamwork"]; //
+    var istSra = ["Work Preference: Teamwork (Ex. I prefer to work with teams)"]; //
 
-  var istDs = ["Database Management"]; //
+    var istDs = ["Database Management (Ex. Organizing and maintaining data)"]; //
 
-  var istDsSra = ["Business & Tech Applications"];
+    var istDsSra = ["Business & Tech Applications (Ex. Technology software used by business)"];
 
-  var dsCyber = ["Work Preference: Individual"]; //
+    var dsCyber = ["Work Preference: Individual (Ex. I like to work by myself)"]; //
 
-  var sraCyber = ["Malware (Viruses, Spyware, Worms, etc)"]; //
+    var sraCyber = ["Malware (Viruses, Spyware, Worms, etc)"]; //
 
-  var istCyberDs = ["Coding"]; //
+    var istCyberDs = ["Coding"]; //
 
-  var sraCyberIst = ["Network Security"]; //
+    var sraCyberIst = ["Network Security (Ex. Protecting networks against unwanted intruders)"]; //
 
-  var sraCyberDs = ["Analytical Thinking"]; //
+    var sraCyberDs = ["Analytical Thinking (Ex. Thinking logically to solve problems)"]; //
+
 
 
 
@@ -360,34 +360,34 @@ $(document).ready(function() {
   });
 });
 
-function tinder--buttons {
-  return function (e) {
-    var $cards = $("document.getElementsByClassName("demo__card__we");
-
-
-    //if (!pullDeltaX) return false;
-
-    var $card = $cards[];
-
-    $card.classList.add('remove.Class');
-
-    if (love) {
-      $card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
-    } else {
-      $card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(30deg)';
-    }
-
-    initCards();
-
-    event.preventDefault();
-  };
-}
-
-var nopeListener = createButtonListener(false);
-var loveListener = createButtonListener(true);
-
-nope.addEventListener('click', nopeListener);
-love.addEventListener('click', loveListener);
+//function createButtonListener(love) {
+//  return function (e) {
+//    var $cards = $(".demo__card__choice.m--reject", $card);
+//    var moveOutWidth = document.getElementsByClassName * 1.5;
+//
+//    if (!pullDeltaX) return false;
+//
+//    var $card = $cards[];
+//
+//    $card.classList.add('remove.Class');
+//
+//    if (love) {
+//      $card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
+//    } else {
+//      $card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(30deg)';
+//    }
+//
+//    initCards();
+//
+//    event.preventDefault();
+//  };
+//}
+//
+//var nopeListener = createButtonListener(false);
+//var loveListener = createButtonListener(true);
+//
+//nope.addEventListener('click', nopeListener);
+//love.addEventListener('click', loveListener);
 
 
 
