@@ -87,7 +87,7 @@ html, body {
 .demo__card-cont {
   position: relative;
   width: 44rem;
-  height: 43rem;
+  height: 35rem;
   margin: 0 auto 9rem;
 }
 /*** End of size of the card content(Green/Orange cards) when car is swiped Pt.1***/
