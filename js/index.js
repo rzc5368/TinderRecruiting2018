@@ -59,7 +59,7 @@ $(document).ready(function() {
 
     var dsCyber = ["Work Preference: Individual (Ex. I like to work by myself)"]; //
 
-    var sraCyber = ["Malware (Viruses, Spyware, Worms, etc)"]; //
+    var sraCyber = ["Malware (Ex. Viruses, Spyware, Worms, etc)"]; //
 
     var istCyberDs = ["Coding"]; //
 
