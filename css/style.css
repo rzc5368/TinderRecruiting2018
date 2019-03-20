@@ -122,12 +122,12 @@ html, body {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 .demo__card.to-left {
-  -webkit-transform: translateX(-45rem) rotate(-45deg) !important;
-          transform: translateX(-45rem) rotate(-45deg) !important;
+  -webkit-transform: translateX(-60rem) rotate(-60deg) !important;
+          transform: translateX(-60rem) rotate(-60deg) !important;
 }
 .demo__card.to-right {
-  -webkit-transform: translate(45rem) rotate(45deg) !important;
-          transform: translate(45rem) rotate(45deg) !important;
+  -webkit-transform: translate(65rem) rotate(65deg) !important;
+          transform: translate(65rem) rotate(65deg) !important;
 }
 .demo__card.below {
   z-index: 1;
