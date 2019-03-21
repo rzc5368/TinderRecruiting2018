@@ -27,11 +27,11 @@ body {margin:0;}
 }
 /***End PSU img logo ***/
 
-/*** Start of text fitting inside box ***/
+/*** Start of text fitting inside box DELETE IF NOT NEEDED ***/
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 20;
 }
 /*** End of text fitting inside box ***/
 
@@ -45,7 +45,7 @@ body {
 
 /*** Start of entire box sizing Pt.1 ***/
 html, body {
-  font-size: 62.5%;
+  font-size: 65%;
 }
 /*** End of entire box sizing Pt.1 ***/
 
@@ -55,7 +55,7 @@ html, body {
   left: 50%;
   top: 50%;
   width: 50.6rem;
-  height: 60rem;
+  height: 65rem;
   margin-left: -25.3rem;
   margin-top: -19rem;
   background: #F6F6F5;
@@ -74,7 +74,7 @@ html, body {
 .demo__content {
   overflow: hidden;
   position: relative;
-  height: 48rem;
+  height: 57rem;
   padding-top: 3.5rem;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -87,7 +87,7 @@ html, body {
 .demo__card-cont {
   position: relative;
   width: 44rem;
-  height: 35rem;
+  height: 34rem;
   margin: 0 auto 9rem;
 }
 /*** End of size of the card content(Green/Orange cards) when car is swiped Pt.1***/
@@ -146,7 +146,7 @@ html, body {
 
 /*** Start of size of box within the outer box that contains image and text field  ***/
 .demo__card__btm {
-  height: 16.5rem;
+  height: 12.5rem;
   background: #F5F5F5;
 }
 /*** End of size of box within the outer box that contains image and text field  ***/
