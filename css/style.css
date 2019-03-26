@@ -1,7 +1,5 @@
 /*Start of Responsive Web Design*/
-* {
-    box-sizing: border-box;
-}
+
 
 .row::after {
   content: "";
