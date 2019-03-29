@@ -1,5 +1,7 @@
 /*Start of Responsive Web Design*/
-
+* {
+  box-sizing: border-box;
+}
 
 .row::after {
   content: "";
@@ -10,30 +12,10 @@
 [class*="col-"] {
   float: left;
   padding: 15px;
-  border: 1px solid red;
-}
-
-/* For mobile phones: */
-[class*="col-"] {
-   width: 100%;
+  /* border: 1px solid red; */
 }
 
 
-@media only screen and (max-width: 768px) {
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-}
 
 /*End of Responsive Web Design*/
 
@@ -106,7 +88,7 @@ html, body {
   overflow: hidden;
   position: relative;
   height: 57rem;
-  padding-top: 3.5rem;
+  padding-top: 1.5rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -117,8 +99,8 @@ html, body {
 /*** Start size of the card content(Green/Orange cards) when car is swiped Pt.1 ***/
 .demo__card-cont {
   position: relative;
-  width: 44rem;
-  height: 34rem;
+  width: -webkit-fill-available;
+  height: 39rem;
   margin: 0 auto 9rem;
 }
 /*** End of size of the card content(Green/Orange cards) when car is swiped Pt.1***/
@@ -328,3 +310,39 @@ button.dislike{
 .fa-remove {
   color: #CDD6DD;
   }
+
+
+@media only screen and (max-width: 550px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .demo {
+   position: sticky;
+   flex-direction: row;
+   height:68rem;
+   margin-top: 0rem;
+  }
+  img{
+   max-width: 100%;
+   height: auto;
+}
+  .demo__content {
+
+    height: 60rem;
+
+}
+  .demo__card-cont {
+  position: relative;
+  width: -webkit-fill-available;
+  height: 43rem;
+  margin: 0 auto 9rem;
+}
+
+   .demo__card__btm {
+
+   height: 17.01rem;
+   }
+
+}
+
