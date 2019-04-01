@@ -68,3 +68,10 @@ function learnMoreActions() {
           window.location.href = 'https://ist.psu.edu/education/opps' ;
         });
 }
+
+function formActions() {
+   document.getElementById("recruitingForm").addEventListener("click", function() {
+   window.location.href = 'https://sites.ist.psu.edu/recruiting/form' ;
+   });
+
+}
