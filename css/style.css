@@ -250,13 +250,13 @@ html, body {
   display:block;
 }
 
-.tinder--buttons {
+.xheartButton {
   flex: 0 0 100px;
   text-align: center;
   padding-top: 20px;
 }
 
-.tinder--buttons button {
+.xheartButton button {
   border-radius: 50%;
   line-height: 60px;
   width: 60px;
@@ -266,11 +266,11 @@ html, body {
   margin: 0 8px;
 }
 
-.tinder--buttons button:focus {
+.xheartButton button:focus {
   outline: 1;
 }
 
-.tinder--buttons i {
+.xheartButton i {
   font-size: 32px;
   vertical-align: middle;
 }

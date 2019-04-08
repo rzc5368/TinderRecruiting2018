@@ -76,6 +76,8 @@ $(document).ready(function() {
     deg = pullDeltaX / 10;
     $card.css("transform", "translateX("+ pullDeltaX +"px) rotate("+ deg +"deg)");
 
+
+
     var opacity = pullDeltaX / 100;
     var rejectOpacity = (opacity >= 0) ? 0 : Math.abs(opacity);
     var likeOpacity = (opacity <= 0) ? 0 : opacity;
@@ -334,6 +336,8 @@ $(document).ready(function() {
       pullDeltaX = 0;
       animating = false;
     }, 300);
+
+
   };
 
 
@@ -359,6 +363,19 @@ $(document).ready(function() {
     });
   });
 });
+
+  var $card, $cardReject, $cardLike;
+
+function likeDislikeButton() {
+
+
+        if( document.getElementById("x")
+            console.log("hi");
+            card.css("transform", "translateX("+ 239 +"px) rotate("+ 28 +"deg)");
+        );
+
+    });
+
 
 //function createButtonListener(love) {
 //  return function (e) {
