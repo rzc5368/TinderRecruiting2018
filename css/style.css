@@ -250,13 +250,13 @@ html, body {
   display:block;
 }
 
-.xheartButton {
+.xheartButtons {
   flex: 0 0 100px;
   text-align: center;
   padding-top: 20px;
 }
 
-.xheartButton button {
+.xheartButtons button {
   border-radius: 50%;
   line-height: 60px;
   width: 60px;
@@ -266,11 +266,11 @@ html, body {
   margin: 0 8px;
 }
 
-.xheartButton button:focus {
+.xheartButtons button:focus {
   outline: 1;
 }
 
-.xheartButton i {
+.xheartButtons i {
   font-size: 32px;
   vertical-align: middle;
 }

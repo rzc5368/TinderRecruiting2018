@@ -76,6 +76,9 @@ $(document).ready(function() {
     deg = pullDeltaX / 10;
     $card.css("transform", "translateX("+ pullDeltaX +"px) rotate("+ deg +"deg)");
 
+    console.log(animating);
+    console.log(deg);
+    console.log(pullDeltaX);
 
 
     var opacity = pullDeltaX / 100;
@@ -343,7 +346,6 @@ $(document).ready(function() {
 
   $(document).on("mousedown touchstart", ".demo__card:not(.inactive)", function(e) {
     if (animating) return;
-
     $card = $(this);
     $cardReject = $(".demo__card__choice.m--reject", $card);
     $cardLike = $(".demo__card__choice.m--like", $card);
@@ -362,19 +364,45 @@ $(document).ready(function() {
       release();
     });
   });
+
+     $(document).ready(function() {
+        $("#x").on("click", function(){
+            console.log("x1");
+
+            $("demo__card").click(function() {
+            console.log("x2");
+                $(this).toggleClass("to-right");
+
+                console.log("x3");
+            });
+
+console.log("x4");
+
+
+
+
+//            $(".demo_card").classList.toggle(".demo__card__choice.m--like:after");
+//           $card.css("transform", "translateX("+ 239 +"px) rotate("+ 28 +"deg)");
+        });
+     });
+
 });
 
-  var $card, $cardReject, $cardLike;
-
-function likeDislikeButton() {
+var $card, $cardReject, $cardLike;
 
 
-        if( document.getElementById("x")
-            console.log("hi");
-            card.css("transform", "translateX("+ 239 +"px) rotate("+ 28 +"deg)");
-        );
 
-    });
+
+//function likeDislikeButton() {
+        //
+        //        console.log("hiOut");
+        //        if( document.getElementById("x") === "x") {
+        //            console.log("hiX");
+        //            $card.css("transform", "translateX("+ 239 +"px) rotate("+ 28 +"deg)");
+        //            $card.addClass("to-right");
+        //        }
+        //
+        //    };
 
 
 //function createButtonListener(love) {
