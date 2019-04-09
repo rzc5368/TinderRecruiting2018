@@ -113,6 +113,8 @@ html, body {
   top: 0;
   width: 100%;
   height: 118%;
+    transform-style: preserve-3d;
+    transition: transform 0.9s;
   -webkit-transform-origin: 50% 100%;
           transform-origin: 50% 100%;
 }
@@ -145,6 +147,8 @@ html, body {
 .demo__card.below {
   z-index: 1;
 }
+
+
 
 .demo__card__img {
   overflow: hidden;
