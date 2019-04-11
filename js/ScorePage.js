@@ -14,6 +14,19 @@ function majorGraphCalculations() {
     var sraBar = (countSRA / totalNumCards) * 100;
 //***End Percentage of each major***
 
+console.log(istBar,csBar, dsBar, sraBar);
+//var div = document.getElementById('.percentage');
+//div.prototype.pseudoStyle("after","content","hi");
+
+//    $("#istBar").hover(function(){
+// console.log("hi2");
+// $('.percentage').attr('percentage11' , "why");
+////        $(this).attr('percentage11' , istBar);
+//
+//    });
+//$('.percentage').attr('percentage11' , istBar);
+
+
 //*** First four variables store a string of the name of the class for each bar in the graph in each html score page.
 //The percentage number is added to the end of the string because there is a class for each percentage***
     var istClassName = "percentage percentage-" + Math.ceil(istBar);
@@ -21,7 +34,8 @@ function majorGraphCalculations() {
     var dsClassName = "percentage percentage-" + Math.ceil(dsBar);
     var sraClassName = "percentage percentage-" + Math.ceil(sraBar);
 //***End variables***
-
+console.log(istClassName,csClassName, dsClassName, sraClassName);
+console.log(document.getElementsByClassName('.percentage percentage-'));
 //***JQuery to add class. Class name variables will change the value of the graph on the x-axis***
      $('#istBar').addClass(istClassName);
      $('#sraBar').addClass(sraClassName);

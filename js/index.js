@@ -211,7 +211,7 @@ $(document).ready(function() {
            var chosenMajor =  localStorage.getmajor;
 
            if(chosenMajor == " Data Sciences"){
-               window.location.href = '/TinderRecruiting2018/ScorePage.html' ;
+               window.location.href = '/TinderRecruiting20182/ScorePage.html' ;
            }
            else if(chosenMajor == " Information Science & Technology"){
    //            localStorage.setItem("CountIST", countIST);
