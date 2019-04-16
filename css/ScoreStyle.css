@@ -209,6 +209,7 @@ dt {
   background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
 }
 .percentage:after {
+  /* content: attr(percentage1) ""; /*/
   content: "";
   display: block;
 
