@@ -8,23 +8,26 @@ function majorGraphCalculations() {
 //***End Card count of each major passed from index.js***
 
 //***Percentage of each major***
-    var istBar = (countIST / totalNumCards) * 100;
-    var csBar =  (countCS / totalNumCards) * 100;
-    var dsBar =  (countDS / totalNumCards) * 100;
-    var sraBar = (countSRA / totalNumCards) * 100;
+    var istBar = (countIST / 10) * 100;
+    var csBar =  (countCS / 10) * 100;
+    var dsBar =  (countDS / 10) * 100;
+    var sraBar = (countSRA / 10) * 100;
 //***End Percentage of each major***
 
-console.log(istBar,csBar, dsBar, sraBar);
-//var div = document.getElementById('.percentage');
-//div.prototype.pseudoStyle("after","content","hi");
 
-//    $("#istBar").hover(function(){
-// console.log("hi2");
-// $('.percentage').attr('percentage11' , "why");
-////        $(this).attr('percentage11' , istBar);
-//
-//    });
-//$('.percentage').attr('percentage11' , istBar);
+
+//***Start Front-end percentage representation on graph***
+    var graphPercentageIst = document.querySelector('#istBar');
+    var graphPercentageSra = document.querySelector('#sraBar');
+    var graphPercentageDs = document.querySelector('#dsBar');
+    var graphPercentageCs = document.querySelector('#csBar');
+
+
+    graphPercentageIst.setAttribute('percentage1', "   " + Math.ceil(istBar) + "%" );
+    graphPercentageSra.setAttribute('percentage1', Math.ceil(sraBar) + "%" );
+    graphPercentageDs.setAttribute('percentage1', Math.ceil(dsBar) + "%" );
+    graphPercentageCs.setAttribute('percentage1', Math.ceil(csBar) + "%" );
+//***End Front-end percentage representation on graph***
 
 
 //*** First four variables store a string of the name of the class for each bar in the graph in each html score page.
@@ -34,8 +37,7 @@ console.log(istBar,csBar, dsBar, sraBar);
     var dsClassName = "percentage percentage-" + Math.ceil(dsBar);
     var sraClassName = "percentage percentage-" + Math.ceil(sraBar);
 //***End variables***
-console.log(istClassName,csClassName, dsClassName, sraClassName);
-console.log(document.getElementsByClassName('.percentage percentage-'));
+
 //***JQuery to add class. Class name variables will change the value of the graph on the x-axis***
      $('#istBar').addClass(istClassName);
      $('#sraBar').addClass(sraClassName);
