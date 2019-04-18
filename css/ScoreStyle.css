@@ -107,10 +107,10 @@
 
 .boxes > div {
 
-  margin: 10px;
-  width: 250px;
+  margin: 20px;
+  width: 500px;
   height: auto px;
-  padding: 15px;
+  padding: 30px;
   background-color: #e1d7f3;
   box-shadow: 5px 5px;
 
@@ -163,6 +163,20 @@
 }
 /**** End Boxes Css ****/
 
+#majorInformationButton {
+       margin: auto;
+       display: flex;
+       padding: 15px 25px;
+       font-size: 24px;
+       text-align: center;
+       cursor: pointer;
+       outline: none;
+       color: #fff;
+       background-color: #b41bce;
+       border: none;
+       border-radius: 15px;
+       box-shadow: 0 9px #999;
+}
 
 /**** Start Graph Css ****/
 

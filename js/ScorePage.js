@@ -74,9 +74,9 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 function learnMoreActions() {
-     document.getElementById("image1").addEventListener("click", function() {
-        window.location.href = 'https://ist.psu.edu/students/engagement/life/clubs_orgs' ;
-        });
+//     document.getElementById("dsInformation").addEventListener("click", function() {
+//        window.location.href = 'https://ist.psu.edu/discover-data-scieces-major' ;
+//        });
      document.getElementById("image2").addEventListener("click", function() {
           window.location.href = 'https://ist.psu.edu/students/engagement/life' ;
         });
