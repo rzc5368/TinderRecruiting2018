@@ -211,82 +211,82 @@ $(document).ready(function() {
            var chosenMajor =  localStorage.getmajor;
 
            if(chosenMajor == " Data Sciences"){
-               window.location.href = '/TinderRecruiting20182/ScorePage.html' ;
+               window.location.href = '/ScorePage.html' ;
            }
            else if(chosenMajor == " Information Science & Technology"){
    //            localStorage.setItem("CountIST", countIST);
-               window.location.href = '/TinderRecruiting2018/ScorePageIST.html' ;
+               window.location.href = '/ScorePageIST.html' ;
 
            }
            else if(chosenMajor == " Security Risk Analysis"){
-               window.location.href = '/TinderRecruiting2018/ScorePageSRA.html' ;
+               window.location.href = '/ScorePageSRA.html' ;
            }
            else if(chosenMajor == " Cyber Security"){
-                 window.location.href = '/TinderRecruiting2018/ScorePageCS.html' ;
+                 window.location.href = '/ScorePageCS.html' ;
            }
            else if((chosenMajor == (" Information Science & Technology Data Sciences"))){
-               var majorWindows = ['/TinderRecruiting2018/ScorePageIST.html','/TinderRecruiting2018/ScorePage.html' ]
+               var majorWindows = ['/ScorePageIST.html','/ScorePage.html' ]
                var randWindow = Math.floor(Math.random() * 2);
 
                window.location.href = majorWindows[randWindow];
    //            console.log("1"); // testing purposes **DELETE If not needed later**
            }
            else if((chosenMajor == " Security Risk Analysis Data Sciences")){
-               var majorWindows = ['/TinderRecruiting2018/ScorePageSRA.html', '/TinderRecruiting2018/ScorePage.html' ]
+               var majorWindows = ['/ScorePageSRA.html', '/ScorePage.html' ]
                var randWindow = Math.floor(Math.random() * 2);
                window.location.href = majorWindows[randWindow];
    //            console.log("2");
            }
            else if((chosenMajor == " Data Sciences Cyber Security")){
-               var majorWindows = ['/TinderRecruiting2018/ScorePageCS.html','/TinderRecruiting2018/ScorePage.html' ]
+               var majorWindows = ['/ScorePageCS.html','/ScorePage.html' ]
                var randWindow = Math.floor(Math.random() * 2);
                window.location.href = majorWindows[randWindow];
    //            console.log("3");
            }
            else if((chosenMajor == " Security Risk Analysis Information Science & Technology")){
-               var majorWindows = ['/TinderRecruiting2018/ScorePageIST.html', '/TinderRecruiting2018/ScorePageSRA.html' ]
+               var majorWindows = ['/ScorePageIST.html', '/ScorePageSRA.html' ]
                var randWindow = Math.floor(Math.random() * 2);
                window.location.href = majorWindows[randWindow];
    //            console.log("4");
            }
            else if((chosenMajor == " Information Science & Technology Cyber Security")){
-               var majorWindows = ['/TinderRecruiting2018/ScorePageIST.html', '/TinderRecruiting2018/ScorePageCS.html' ]
+               var majorWindows = ['/ScorePageIST.html', '/ScorePageCS.html' ]
                var randWindow = Math.floor(Math.random() * 2);
                window.location.href = majorWindows[randWindow];
    //            console.log("5");
            }
            else if((chosenMajor == " Security Risk Analysis Cyber Security") ){
-               var majorWindows = ['/TinderRecruiting2018/ScorePageSRA.html', '/TinderRecruiting2018/ScorePageCS.html' ]
+               var majorWindows = ['/ScorePageSRA.html', '/ScorePageCS.html' ]
                var randWindow = Math.floor(Math.random() * 2);
                window.location.href = majorWindows[randWindow];
    //            console.log("6");
            }
            else if((chosenMajor == " Security Risk Analysis Information Science & Technology Data Sciences")){
-                var majorWindows = ['/TinderRecruiting2018/ScorePageIST.html', '/TinderRecruiting2018/ScorePageSRA.html','/TinderRecruiting2018/ScorePage.html' ]
+                var majorWindows = ['/ScorePageIST.html', '/ScorePageSRA.html','/TinderRecruiting2018/ScorePage.html' ]
                 var randWindow = Math.floor(Math.random() * 3);
                 window.location.href = majorWindows[randWindow];
    //            console.log("7");
             }
            else if((chosenMajor == " Security Risk Analysis Information Science & Technology Cyber Security")){
-                var majorWindows = ['/TinderRecruiting2018/ScorePageIST.html', '/TinderRecruiting2018/ScorePageSRA.html', '/TinderRecruiting2018/ScorePageCS.html' ]
+                var majorWindows = ['/ScorePageIST.html', '/ScorePageSRA.html', '/ScorePageCS.html' ]
                 var randWindow = Math.floor(Math.random() * 3);
                 window.location.href = majorWindows[randWindow];
    //            console.log("8");
             }
            else if((chosenMajor == " Security Risk Analysis Data Sciences Cyber Security")){
-               var majorWindows = ['/TinderRecruiting2018/ScorePageSRA.html', '/TinderRecruiting2018/ScorePageCS.html','/TinderRecruiting2018/ScorePage.html' ]
+               var majorWindows = ['/ScorePageSRA.html', '/ScorePageCS.html','/ScorePage.html' ]
                var randWindow = Math.floor(Math.random() * 3);
                window.location.href = majorWindows[randWindow];
    //            console.log("9");
            }
            else if((chosenMajor == " Information Science & Technology Data Sciences Cyber Security")){
-               var majorWindows = ['/TinderRecruiting2018/ScorePageCS.html','/TinderRecruiting2018/ScorePage.html','/TinderRecruiting2018/ScorePageIST.html' ]
+               var majorWindows = ['/ScorePageCS.html','/ScorePage.html','/ScorePageIST.html' ]
                var randWindow = Math.floor(Math.random() * 3);
                window.location.href = majorWindows[randWindow];
    //            console.log("10");
            }
            else if((chosenMajor == " Security Risk Analysis Information Science & Technology Data Sciences Cyber Security")){
-               var majorWindows = ['/TinderRecruiting2018/ScorePageCS.html','/TinderRecruiting2018/ScorePage.html','/TinderRecruiting2018/ScorePageIST.html', '/TinderRecruiting2018/ScorePageSRA.html' ]
+               var majorWindows = ['/ScorePageCS.html','/ScorePage.html','/ScorePageIST.html', '/ScorePageSRA.html' ]
                var randWindow = Math.floor(Math.random() * 3);
                window.location.href = majorWindows[randWindow];
    //            console.log("11");
