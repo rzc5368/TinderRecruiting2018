@@ -26,7 +26,7 @@
   transition: 0.3s;
   display: inline-block;
   font-size: 17px;
-  width: 24%;
+  width: 32%;
 }
 
 /* Change background color of buttons on hover */
@@ -163,7 +163,7 @@
 }
 /**** End Boxes Css ****/
 
-#majorInformationButton {
+.majorInformationButton {
        margin: auto;
        display: flex;
        padding: 15px 25px;
@@ -176,6 +176,14 @@
        border: none;
        border-radius: 15px;
        box-shadow: 0 9px #999;
+}
+
+.majorInformationButton:hover {background-color: #a821bf}
+
+.majorInformationButton:active {
+  background-color: #581873;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 /**** Start Graph Css ****/

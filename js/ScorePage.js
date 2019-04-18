@@ -73,15 +73,28 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-function learnMoreActions() {
-//     document.getElementById("dsInformation").addEventListener("click", function() {
-//        window.location.href = 'https://ist.psu.edu/discover-data-scieces-major' ;
-//        });
-     document.getElementById("image2").addEventListener("click", function() {
-          window.location.href = 'https://ist.psu.edu/students/engagement/life' ;
+function learnMoreDsActions() {
+
+    document.getElementById("dsInformation").addEventListener("click", function() {
+         window.location.href = 'https://ist.psu.edu/discover-data-scieces-major' ;
+         });
+}
+
+function learnMoreCsActions() {
+     document.getElementById("csInformation").addEventListener("click", function() {
+          window.location.href = 'https://ist.psu.edu/discover-cyber-major' ;
         });
-     document.getElementById("image3").addEventListener("click", function() {
-          window.location.href = 'https://ist.psu.edu/education/opps' ;
+}
+
+function learnMoreIstActions() {
+     document.getElementById("istInformation").addEventListener("click", function() {
+          window.location.href = 'https://ist.psu.edu/discover-ist-major' ;
+        });
+}
+
+function learnMoreSraActions() {
+     document.getElementById("sraInformation").addEventListener("click", function() {
+          window.location.href = 'https://ist.psu.edu/discover-sra-major' ;
         });
 }
 
