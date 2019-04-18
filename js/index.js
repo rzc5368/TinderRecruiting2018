@@ -11,7 +11,7 @@ $(document).ready(function() {
   var deg = 0;
   var $card, $cardReject, $cardLike;
 
-
+ 
  // count topics by major(s)
 
   var countIST = 0;     // Information Sciences & Tech ( Design & Dev, Integration & App, People & Org.)
