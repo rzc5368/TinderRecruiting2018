@@ -332,9 +332,13 @@ and (-webkit-device-pixel-ratio : 3)
    height:68rem;
    margin-top: 0rem;
   }S
+  img{
+   max-width: 100%;
+   height: auto;
+}
 
    .topic_img {
-     width: 350px;
+     width: 325px;
    }
   .demo__content {
 
