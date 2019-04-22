@@ -316,7 +316,11 @@ button.dislike{
   }
 
 
-@media only screen and (max-width: 550px) {
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+ {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
