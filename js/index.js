@@ -1,16 +1,13 @@
 $(document).ready(function() {
 
-
-
   var animating = false;
   var cardsCounter = 0;
-    var cardTotals = 28;
+  var cardTotals = 28;
   var numOfCards = 28;
   var decisionVal = 80;
   var pullDeltaX = 0;
   var deg = 0;
   var $card, $cardReject, $cardLike;
-
 
  // count topics by major(s)
 
@@ -67,10 +64,6 @@ $(document).ready(function() {
 
     var sraCyberDs = ["Analytical Thinking (Ex. Thinking logically to solve problems)"]; //
 
-
-
-
-
   function pullChange() {
     animating = true;
     deg = pullDeltaX / 10;
@@ -83,7 +76,6 @@ $(document).ready(function() {
     $cardReject.css("opacity", rejectOpacity);
     $cardLike.css("opacity", likeOpacity);
   };
-
 
  function countCardSwipes() {
 
@@ -167,15 +159,6 @@ $(document).ready(function() {
 
        }
 
- //   Testing Purposes
-
-       console.log("IST: " + countIST);
-       console.log("SRA: " + countSRA);
-       console.log("DS: " + countDS);
-       console.log("Cyber: " + countCyber);
-
-
- //    End Test
  }
 
  function redirection(){
@@ -204,8 +187,6 @@ $(document).ready(function() {
          localStorage.getcountSRA = countSRA;
          localStorage.getcardTotals = cardTotals;
 
-
-
            localStorage.getmajor = major;  //*** the index page will redirect to a different html according to the major with the highest score ***
 
            var chosenMajor =  localStorage.getmajor;
@@ -214,7 +195,7 @@ $(document).ready(function() {
                window.location.href = '/ScorePage.html' ;
            }
            else if(chosenMajor == " Information Science & Technology"){
-   //            localStorage.setItem("CountIST", countIST);
+
                window.location.href = '/ScorePageIST.html' ;
 
            }
@@ -229,67 +210,67 @@ $(document).ready(function() {
                var randWindow = Math.floor(Math.random() * 2);
 
                window.location.href = majorWindows[randWindow];
-   //            console.log("1"); // testing purposes **DELETE If not needed later**
+
            }
            else if((chosenMajor == " Security Risk Analysis Data Sciences")){
                var majorWindows = ['/ScorePageSRA.html', '/ScorePage.html' ]
                var randWindow = Math.floor(Math.random() * 2);
                window.location.href = majorWindows[randWindow];
-   //            console.log("2");
+
            }
            else if((chosenMajor == " Data Sciences Cyber Security")){
                var majorWindows = ['/ScorePageCS.html','/ScorePage.html' ]
                var randWindow = Math.floor(Math.random() * 2);
                window.location.href = majorWindows[randWindow];
-   //            console.log("3");
+
            }
            else if((chosenMajor == " Security Risk Analysis Information Science & Technology")){
                var majorWindows = ['/ScorePageIST.html', '/ScorePageSRA.html' ]
                var randWindow = Math.floor(Math.random() * 2);
                window.location.href = majorWindows[randWindow];
-   //            console.log("4");
+
            }
            else if((chosenMajor == " Information Science & Technology Cyber Security")){
                var majorWindows = ['/ScorePageIST.html', '/ScorePageCS.html' ]
                var randWindow = Math.floor(Math.random() * 2);
                window.location.href = majorWindows[randWindow];
-   //            console.log("5");
+
            }
            else if((chosenMajor == " Security Risk Analysis Cyber Security") ){
                var majorWindows = ['/ScorePageSRA.html', '/ScorePageCS.html' ]
                var randWindow = Math.floor(Math.random() * 2);
                window.location.href = majorWindows[randWindow];
-   //            console.log("6");
+
            }
            else if((chosenMajor == " Security Risk Analysis Information Science & Technology Data Sciences")){
                 var majorWindows = ['/ScorePageIST.html', '/ScorePageSRA.html','/TinderRecruiting2018/ScorePage.html' ]
                 var randWindow = Math.floor(Math.random() * 3);
                 window.location.href = majorWindows[randWindow];
-   //            console.log("7");
+
             }
            else if((chosenMajor == " Security Risk Analysis Information Science & Technology Cyber Security")){
                 var majorWindows = ['/ScorePageIST.html', '/ScorePageSRA.html', '/ScorePageCS.html' ]
                 var randWindow = Math.floor(Math.random() * 3);
                 window.location.href = majorWindows[randWindow];
-   //            console.log("8");
+
             }
            else if((chosenMajor == " Security Risk Analysis Data Sciences Cyber Security")){
                var majorWindows = ['/ScorePageSRA.html', '/ScorePageCS.html','/ScorePage.html' ]
                var randWindow = Math.floor(Math.random() * 3);
                window.location.href = majorWindows[randWindow];
-   //            console.log("9");
+
            }
            else if((chosenMajor == " Information Science & Technology Data Sciences Cyber Security")){
                var majorWindows = ['/ScorePageCS.html','/ScorePage.html','/ScorePageIST.html' ]
                var randWindow = Math.floor(Math.random() * 3);
                window.location.href = majorWindows[randWindow];
-   //            console.log("10");
+
            }
            else if((chosenMajor == " Security Risk Analysis Information Science & Technology Data Sciences Cyber Security")){
                var majorWindows = ['/ScorePageCS.html','/ScorePage.html','/ScorePageIST.html', '/ScorePageSRA.html' ]
                var randWindow = Math.floor(Math.random() * 3);
                window.location.href = majorWindows[randWindow];
-   //            console.log("11");
+
            }
 
        }
@@ -322,7 +303,6 @@ $(document).ready(function() {
     redirection();
   };
 
-
   $(document).on("mousedown touchstart", ".demo__card:not(.inactive)", function(e) {
     if (animating) return;
     $card = $(this);
@@ -344,8 +324,6 @@ $(document).ready(function() {
     });
   });
 
-
-
    $("#x").click(function(){
      var cardReject = $(".demo__card")
       cardReject = cardReject[numOfCards -1 ];
@@ -362,9 +340,7 @@ $(document).ready(function() {
         $(cardLike).toggleClass("to-right");
         countCardSwipes();
          redirection();
-
     });
-
 });
 
 

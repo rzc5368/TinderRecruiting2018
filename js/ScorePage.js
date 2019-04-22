@@ -14,8 +14,6 @@ function majorGraphCalculations() {
     var sraBar = (countSRA / 10) * 100;
 //***End Percentage of each major***
 
-
-
 //***Start Front-end percentage representation on graph***
     var graphPercentageIst = document.querySelector('#istBar');
     var graphPercentageSra = document.querySelector('#sraBar');
@@ -47,16 +45,16 @@ function majorGraphCalculations() {
 
 //***Action Event Listeners. When bar is clicked it will redirect the user to that specific html page according to bar clicked that's associated with that major"
      document.getElementById("istBar").addEventListener("click", function() {
-        window.location.href = '/TinderRecruiting2018/ScorePageIST.html' ;
+        window.location.href = '/ScorePageIST.html' ;
         });
      document.getElementById("sraBar").addEventListener("click", function() {
-          window.location.href = '/TinderRecruiting2018/ScorePageSRA.html' ;
+          window.location.href = '/ScorePageSRA.html' ;
         });
      document.getElementById("dsBar").addEventListener("click", function() {
-          window.location.href = '/TinderRecruiting2018/ScorePage.html' ;
+          window.location.href = '/ScorePage.html' ;
         });
      document.getElementById("csBar").addEventListener("click", function() {
-          window.location.href = '/TinderRecruiting2018/ScorePageCS.html' ;
+          window.location.href = '/ScorePageCS.html' ;
         });
 //***End action Listeners***
 }
