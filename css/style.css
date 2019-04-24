@@ -316,47 +316,56 @@ button.dislike{
   color: #CDD6DD;
   }
 
-
 @media only screen
 and (min-device-width : 375px)
-and (max-device-width : 812px)
+and (max-device-width : 667px)
 and (-webkit-device-pixel-ratio : 3)
  {
+
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
-  }
-  .demo {
-   position: sticky;
-   flex-direction: row;
-   height:68rem;
-   margin-top: 0rem;
-  }
-  img{
-   max-width: 100%;
-   height: auto;
 }
 
-   .topic_img {
-     width: 325px;
-   }
-  .demo__content {
+.demo {
+   top:45%;
+   width: 33.6rem;
+   margin-left: -16.9rem;
+}
 
-    height: 60rem;
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.topic_img {
+  width: 293px;
+}
+
+.demo__content {
+
+  height: 57rem;
+  padding-top: 3.5rem;
 
 }
 
-  .demo__card-cont {
+.demo__card-cont {
   position: relative;
   width: -webkit-fill-available;
-  height: 43rem;
-  margin: 0 auto 9rem;
+  height: 41rem;
+  margin: -14px auto 9rem;
 }
 
-   .demo__card__btm {
+.demo__card__btm {
 
    height: 17.01rem;
-   }
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  /* border: 1px solid red; */
+}
 
 }
 
