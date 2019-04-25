@@ -316,11 +316,18 @@ button.dislike{
   color: #CDD6DD;
   }
 
+/* Start Mobile queries css */
+
+/*Iphone XR */
 @media only screen
 and (min-width : 375px)
 and (max-width : 896px)
 and (orientation : portrait)
  {
+
+ .icon-bar img {
+    display:none;
+ }
 
   /* For mobile phones: */
   [class*="col-"] {
@@ -328,8 +335,9 @@ and (orientation : portrait)
 }
 
 .demo {
-   top:45%;
+   top:41%;
    width: 33.6rem;
+   height: 64rem;
    margin-left: -16.9rem;
 }
 
@@ -369,3 +377,4 @@ img {
 
 }
 
+/* End mobile queries css */
