@@ -361,12 +361,12 @@ img {
   position: relative;
   width: -webkit-fill-available;
   height: 41rem;
-  margin: -14px auto 9rem;
+  margin: -26px auto 10rem;
 }
 
 .demo__card__btm {
 
-   height: 15.51rem;
+   height: 16.01rem;
 }
 
 [class*="col-"] {
