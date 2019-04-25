@@ -320,7 +320,7 @@ button.dislike{
 
 /*Iphone XR */
 @media only screen
-and (min-width : 375px)
+and (min-width : 365px)
 and (max-width : 896px)
 and (orientation : portrait)
  {
@@ -337,7 +337,7 @@ and (orientation : portrait)
 .demo {
    top:41%;
    width: 33.6rem;
-   height: 65rem;
+   height: 66rem;
    margin-left: -16.9rem;
 }
 
@@ -360,13 +360,13 @@ img {
 .demo__card-cont {
   position: relative;
   width: -webkit-fill-available;
-  height: 40rem;
+  height: 41rem;
   margin: -14px auto 9rem;
 }
 
 .demo__card__btm {
 
-   height: 14.51rem;
+   height: 15.51rem;
 }
 
 [class*="col-"] {
