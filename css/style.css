@@ -337,7 +337,7 @@ and (orientation : portrait)
 .demo {
    top:41%;
    width: 33.6rem;
-   height: 64rem;
+   height: 65rem;
    margin-left: -16.9rem;
 }
 
@@ -366,7 +366,7 @@ img {
 
 .demo__card__btm {
 
-   height: 16.01rem;
+   height: 15.51rem;
 }
 
 [class*="col-"] {
