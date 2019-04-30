@@ -99,7 +99,7 @@ html, body {
 /*** Start size of the card content(Green/Orange cards) when car is swiped Pt.1 ***/
 .demo__card-cont {
   position: relative;
-  width: -webkit-fill-available;
+  width: 100%;
   height: 39rem;
   margin: 0 auto 9rem;
 }
