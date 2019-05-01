@@ -381,9 +381,9 @@ img {
 @media screen and ( min-width: 1280px ) and ( max-height : 750px ) {
 
 .demo {
-   top:61%;
+   top:56%;
    width: 47.6rem;
-   height: 46rem;
+   height: 50rem;
 
 }
 
@@ -394,12 +394,12 @@ img {
 
 .topic_img {
       width: 424px;
-      height: 180px;
+      height: 208px;
 }
 
 
 .demo__card-cont {
-  height: 22rem;
+  height: 25rem;
 
 }
 
