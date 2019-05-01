@@ -65,6 +65,8 @@ $(document).ready(function() {
     var sraCyberDs = ["Analytical Thinking (Ex. Thinking logically to solve problems)"]; //
 
   function pullChange() {
+
+
     animating = true;
     deg = pullDeltaX / 10;
     $card.css("transform", "translateX("+ pullDeltaX +"px) rotate("+ deg +"deg)");
@@ -83,7 +85,6 @@ $(document).ready(function() {
       numOfCards--;
 
        var checkIst = istTopics.indexOf(example[numOfCards].textContent); // check variables is the index of the topic array. If index is -1 it means it is not within the array.
-       console.log(checkIst);
        var checkSra = sraTopics.indexOf(example[numOfCards].textContent);
        var checkDs = dsTopics.indexOf(example[numOfCards].textContent);
        var checkCyber = cyberTopics.indexOf(example[numOfCards].textContent);
@@ -276,18 +277,20 @@ $(document).ready(function() {
        }
  }
 
+/* Function is called when a card is pulled & released to either direction */
   function release() {
 
-    if (pullDeltaX >= decisionVal) {  // Add points to each major if right swiped
+    if (pullDeltaX >= decisionVal) { //if card is released to the right
       $card.addClass("to-right");
       countCardSwipes();
 
-    } else if (pullDeltaX <= -decisionVal) {
+    } else if (pullDeltaX <= -decisionVal) { //if card is released to the left
       $card.addClass("to-left");
       numOfCards--;
     }
 
-    if (Math.abs(pullDeltaX) < decisionVal) {
+    if (Math.abs(pullDeltaX) < decisionVal) { // if card is neither swiped right or left resets to position
+
       $card.addClass("reset");
     }
 
@@ -299,13 +302,16 @@ $(document).ready(function() {
       animating = false;
     }, 300);
 
-    console.log(numOfCards);
+
     redirection();
   };
 
   $(document).on("mousedown touchstart", ".demo__card:not(.inactive)", function(e) {
     if (animating) return;
-    $card = $(this);
+
+   var cardReject = $(".demo__card")
+   $card = $(cardReject[numOfCards -1 ]);
+
     $cardReject = $(".demo__card__choice.m--reject", $card);
     $cardLike = $(".demo__card__choice.m--like", $card);
     var startX =  e.pageX || e.originalEvent.touches[0].pageX;
@@ -319,24 +325,23 @@ $(document).ready(function() {
 
     $(document).on("mouseup touchend", function() {
       $(document).off("mousemove touchmove mouseup touchend");
-      if (!pullDeltaX) return; // prevents from rapid click events
+
       release();
     });
   });
 
-   $("#x").click(function(){
+   $("#x").click(function(){  //when x button is clicked
      var cardReject = $(".demo__card")
       cardReject = cardReject[numOfCards -1 ];
       numOfCards--;
-            console.log(numOfCards);
             $(cardReject).toggleClass("to-left");
             redirection();
         });
 
-   $("#heart").click(function(){
+   $("#heart").click(function(){ // when heart button is clicked
        var cardLike = $(".demo__card")
        cardLike = cardLike[numOfCards -1 ];
-        console.log(numOfCards);
+
         $(cardLike).toggleClass("to-right");
         countCardSwipes();
          redirection();
