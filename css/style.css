@@ -319,6 +319,7 @@ button.dislike{
 /* Start Mobile queries css */
 
 /*Iphone XR */
+
 @media only screen
 and (min-width : 365px)
 and (max-width : 896px)
@@ -377,4 +378,36 @@ img {
 
 }
 
+@media screen and ( min-width: 1280px ) and ( max-height : 600px ) {
+
+.demo {
+   top:61%;
+   width: 47.6rem;
+   height: 46rem;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.topic_img {
+      width: 424px;
+      height: 180px;
+}
+
+
+.demo__card-cont {
+  height: 22rem;
+
+}
+
+.demo__card__btm {
+
+   height: 13.01rem;
+}
+
+
+}
 /* End mobile queries css */
